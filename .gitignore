@@ -1,0 +1,4 @@
+node_modules
+sitemap.pdf
+*.log
+dist
