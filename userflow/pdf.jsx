@@ -23,4 +23,5 @@ const HelloWorld = ({ userflow, options }) => (
   </Document>
 )
 
-export default (userflow, { options }) => ReactPDF.renderToStream(<HelloWorld userflow={userflow} options={options} />)
+export default (userflow, { options } = {}) =>
+  ReactPDF.renderToString(<HelloWorld userflow={userflow} options={options} />)

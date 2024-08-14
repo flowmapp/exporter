@@ -1,6 +1,10 @@
 import pdf from './pdf.jsx'
 
 export const exportSitemap = (sitemap, { options, format } = {}) => {
+  if (!sitemap) {
+    throw new Error('No sitemap passed for export')
+  }
+
   switch (format) {
     case 'pdf': {
       return pdf(sitemap, { options })

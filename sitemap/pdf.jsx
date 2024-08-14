@@ -23,4 +23,5 @@ const HelloWorld = ({ sitemap, options }) => (
   </Document>
 )
 
-export default (sitemap, { options }) => ReactPDF.renderToStream(<HelloWorld sitemap={sitemap} options={options} />)
+export default (sitemap, { options } = {}) =>
+  ReactPDF.renderToString(<HelloWorld sitemap={sitemap} options={options} />)

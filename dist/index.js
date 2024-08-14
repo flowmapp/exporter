@@ -204209,10 +204209,13 @@ var styles = StyleSheet.create({
   }
 });
 var HelloWorld = ({ sitemap, options }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Document, { children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Page, { size: "A4", style: styles.page, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(View, { style: styles.section, children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)(Text, { children: sitemap.title }) }) }) });
-var pdf_default = (sitemap, { options }) => index.renderToStream(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HelloWorld, { sitemap, options }));
+var pdf_default = (sitemap, { options } = {}) => index.renderToString(/* @__PURE__ */ (0, import_jsx_runtime.jsx)(HelloWorld, { sitemap, options }));
 
 // sitemap/index.js
 var exportSitemap = (sitemap, { options, format } = {}) => {
+  if (!sitemap) {
+    throw new Error("No sitemap passed for export");
+  }
   switch (format) {
     case "pdf": {
       return pdf_default(sitemap, { options });
@@ -204238,10 +204241,13 @@ var styles2 = StyleSheet.create({
   }
 });
 var HelloWorld2 = ({ userflow, options }) => /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Document, { children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Page, { size: "A4", style: styles2.page, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(View, { style: styles2.section, children: /* @__PURE__ */ (0, import_jsx_runtime2.jsx)(Text, { children: userflow.title }) }) }) });
-var pdf_default2 = (userflow, { options }) => index.renderToStream(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(HelloWorld2, { userflow, options }));
+var pdf_default2 = (userflow, { options } = {}) => index.renderToString(/* @__PURE__ */ (0, import_jsx_runtime2.jsx)(HelloWorld2, { userflow, options }));
 
 // userflow/index.js
 var exportUserflow = (userflow, { options, format } = {}) => {
+  if (!userflow) {
+    throw new Error("No userflow passed for export");
+  }
   switch (format) {
     case "pdf": {
       return pdf_default2(userflow, { options });
