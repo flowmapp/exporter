@@ -30,7 +30,7 @@ Every entity folder has multiple formats that have corresponding file names (pdf
 
 Other scripts
 -------------
-If you want to build something other than sitemap's pdf - refer to `package.json`'s scripts section.
+If you want to build something other than pdf of a sitemap - refer to `package.json`'s scripts section.
 Scripts are being composed of next terms:
 ```bash
 yarn dev:<entity>:<format>
