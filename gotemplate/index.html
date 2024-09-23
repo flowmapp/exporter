@@ -1,0 +1,715 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>New sitemap</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <style>
+      @page {
+        size: A4;
+        margin: 1mm 1cm 1mm 15mm;
+      }
+
+      @media print {
+        .page {
+          page-break-before: always;
+        }
+
+        h1 {
+          font-size: 40pt;
+          line-height: 48.41pt;
+          font-weight: 500;
+          color: var(--primary-basic-gray);
+        }
+
+        h2 {
+          font-size: 20pt;
+          font-weight: 700;
+          line-height: 24pt;
+          letter-spacing: -0.04em;
+          color: var(--primary-basic-gray);
+        }
+
+        h3 {
+          font-size: 18pt;
+          font-weight: 700;
+          line-height: 20pt;
+          letter-spacing: -0.02em;
+          color: var(--primary-basic-gray);
+        }
+
+        p {
+          font-size: 14pt;
+          line-height: 20pt;
+          letter-spacing: -1%;
+          color: var(--primary-basic-gray);
+        }
+
+        .ant-modal-mask {
+          display: none;
+        }
+
+        .ant-modal-content {
+          display: none;
+        }
+
+        .tox-comment {
+          background-color: unset !important;
+        }
+
+        blockquote {
+          padding-left: 1rem !important;
+          margin-left: -1rem !important;
+          border-left: solid 4px var(--primary-basic-gray);
+        }
+
+        ul {
+          display: block;
+          list-style-type: disc;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+          unicode-bidi: isolate;
+        }
+
+        ol {
+          display: block;
+          list-style-type: decimal;
+          margin-block-start: 1em;
+          margin-block-end: 1em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          padding-inline-start: 40px;
+          unicode-bidi: isolate;
+        }
+
+
+        a::after {
+          content: target-counter(attr(href url), page)
+        }
+      }
+
+      @media print and (color) {
+        * {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+
+      :root {
+        --transparent: rgba(0, 0, 0, 0);
+
+        --primary-red-500: rgba(255, 71, 111, 1);
+
+        --primary-basic-blue: #0050ff;
+        --primary-basic-white: #ffffff;
+
+        --primary-basic-gray: #1f1f1f;
+        --primary-basic-gray-40: #f5f5f5;
+        --primary-basic-gray-400: rgba(153, 153, 153, 1);
+        --primary-basic-gray-560: #707070;
+        --primary-basic-gray-880: rgba(31, 31, 31, 1);
+
+        --secondary-gray-800: #4e4e4e;
+
+
+        --secondary-red: rgba(255, 112, 112);
+        --secondary-red-64: rgba(255, 112, 112, 0.64);
+        --secondary-red-56: rgba(255, 112, 112, 0.56);
+        --secondary-red-20: rgba(255, 112, 112, 0.2);
+        --secondary-red-32: rgba(255, 112, 112, 0.32);
+        --secondary-red-8: rgba(255, 112, 112, 0.08);
+
+        --secondary-orange: rgba(255, 163, 52);
+        --secondary-orange-64: rgba(255, 163, 52, 0.64);
+        --secondary-orange-56: rgba(255, 163, 52, 0.56);
+        --secondary-orange-20: rgba(255, 163, 52, 0.2);
+        --secondary-orange-32: rgba(255, 163, 52, 0.32);
+        --secondary-orange-8: rgba(255, 163, 52, 0.08);
+
+        --secondary-yellow: rgba(245, 204, 0);
+        --secondary-yellow-64: rgba(245, 204, 0, 0.64);
+        --secondary-yellow-56: rgba(245, 204, 0, 0.56);
+        --secondary-yellow-20: rgba(245, 204, 0, 0.2);
+        --secondary-yellow-32: rgba(245, 204, 0, 0.32);
+        --secondary-yellow-8: rgba(245, 204, 0, 0.08);
+
+        --secondary-green: rgba(54, 235, 141);
+        --secondary-green-800: rgba(22, 94, 56, 1);
+        --secondary-green-500: rgba(54, 235, 141, 1);
+        --secondary-green-64: rgba(54, 235, 141, 0.64);
+        --secondary-green-56: rgba(54, 235, 141, 0.56);
+        --secondary-green-20: rgba(54, 235, 141, 0.2);
+        --secondary-green-32: rgba(54, 235, 141, 0.32);
+        --secondary-green-8: rgba(54, 235, 141, 0.08);
+
+        --secondary-electric: rgba(58, 243, 255);
+        --secondary-electric-64: rgba(58, 243, 255, 0.64);
+        --secondary-electric-56: rgba(58, 243, 255, 0.56);
+        --secondary-electric-20: rgba(58, 243, 255, 0.2);
+        --secondary-electric-32: rgba(58, 243, 255, 0.32);
+        --secondary-electric-8: rgba(58, 243, 255, 0.08);
+
+        --secondary-blue: rgba(102, 150, 255);
+        --secondary-blue-64: rgba(102, 150, 255, 0.64);
+        --secondary-blue-56: rgba(102, 150, 255, 0.56);
+        --secondary-blue-20: rgba(102, 150, 255, 0.2);
+        --secondary-blue-32: rgba(102, 150, 255, 0.32);
+        --secondary-blue-8: rgba(102, 150, 255, 0.08);
+
+        --secondary-purple: rgba(155, 112, 255);
+        --secondary-purple-64: rgba(155, 112, 255, 0.64);
+        --secondary-purple-56: rgba(155, 112, 255, 0.56);
+        --secondary-purple-20: rgba(155, 112, 255, 0.2);
+        --secondary-purple-32: rgba(155, 112, 255, 0.32);
+        --secondary-purple-8: rgba(155, 112, 255, 0.08);
+
+        --secondary-pink: rgba(255, 153, 255);
+        --secondary-pink-64: rgba(255, 153, 255, 0.64);
+        --secondary-pink-56: rgba(255, 153, 255, 0.56);
+        --secondary-pink-20: rgba(255, 153, 255, 0.2);
+        --secondary-pink-32: rgba(255, 153, 255, 0.32);
+        --secondary-pink-8: rgba(255, 153, 255, 0.08);
+
+        --secondary-gray: rgba(173, 173, 173);
+        --secondary-gray-80: rgba(173, 173, 173, 0.8);
+        --secondary-gray-64: rgba(173, 173, 173, 0.64);
+        --secondary-gray-56: rgba(173, 173, 173, 0.56);
+        --secondary-gray-20: rgba(173, 173, 173, 0.2);
+        --secondary-gray-32: rgba(173, 173, 173, 0.32);
+        --secondary-gray-8: rgba(173, 173, 173, 0.08);
+
+        --neutral-gray-40: rgba(245, 245, 245, 1);
+        --neutral-gray-120: #e0e0e0;
+        --neutral-gray-160: rgba(214, 214, 214, 1);
+        --neutral-gray-opacity-40: rgba(0, 0, 0, 0.04);
+        --neutral-gray-opacity-60: rgba(0, 0, 0, 0.06);
+        --neutral-gray-400: rgba(0, 0, 0, 0.4);
+        --neutral-gray-opacity-120: rgba(0, 0, 0, 0.12);
+        --neutral-gray-gray-400: #999999;
+      }
+
+
+      body {
+        font-family: Inter;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header {
+        height: 30mm;
+        display: table-header-group;
+        display: flex;
+        align-items: flex-end;
+      }
+
+      .footer {
+        height: 20mm;
+        display: table-footer-group;
+      }
+    </style>
+
+    <style>
+      .toc-page-link {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        gap: 8px;
+        font-size: 14pt;
+        font-weight: 500;
+        line-height: 20pt;
+        letter-spacing: -0.01em;
+        color: var(--primary-basic-gray);
+        width: 16cm;
+
+        height: 36px;
+        border-bottom: 1px solid var(--neutral-gray-120);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">New sitemap</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <h1>New sitemap</h1>
+                <p><FolderIcon size="{16}" /> Project Title example</p>
+                <p><ClockIcon size="{16}" /> 2021-09-01</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Structure</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              
+              <p>
+                <a href="#67205a23-ca7b-4507-b9da-14c09ee80f03" class="toc-page-link"><span>Home</span></a>
+              </p>
+              
+              <p>
+                <a href="#470ce966-0d07-4cb6-87a8-bb7e4b71bd33" class="toc-page-link"><span>Services</span></a>
+              </p>
+              
+              <p>
+                <a href="#597be23c-f2c6-498f-95e5-28d3ed3c1ca5" class="toc-page-link"><span>Company</span></a>
+              </p>
+              
+              <p>
+                <a href="#2e15d632-a336-4be7-899a-def32f7da66f" class="toc-page-link"><span>404 Page</span></a>
+              </p>
+              
+              <p>
+                <a href="#2fd12747-736c-4e1e-b145-0a6eb0147d17" class="toc-page-link"><span>Terms and Conditions</span></a>
+              </p>
+              
+              <p>
+                <a href="#5924dd27-47fa-4794-b5b6-f2b9817bd532" class="toc-page-link"><span>Support</span></a>
+              </p>
+              
+              <p>
+                <a href="#609bc0ab-1039-47bf-a88e-a89d974a322a" class="toc-page-link"><span>Business Finance</span></a>
+              </p>
+              
+              <p>
+                <a href="#735ca77d-fc28-4563-98d7-117314a6b180" class="toc-page-link"><span>Personal Finance</span></a>
+              </p>
+              
+              <p>
+                <a href="#9066566a-618f-499a-bc5d-387cc2fa4f06" class="toc-page-link"><span>Log In</span></a>
+              </p>
+              
+              <p>
+                <a href="#97b0994f-2893-4867-a601-7def327f879f" class="toc-page-link"><span>Blog</span></a>
+              </p>
+              
+              <p>
+                <a href="#9e04f618-910c-411c-afc4-4aec3f64a92f" class="toc-page-link"><span>Careers</span></a>
+              </p>
+              
+              <p>
+                <a href="#b57f773f-d137-405b-9bc4-5d8c0b4b5096" class="toc-page-link"><span>International Services</span></a>
+              </p>
+              
+              <p>
+                <a href="#d4fc6752-725b-4823-a4cd-fb5373bcd4fa" class="toc-page-link"><span>Press Room</span></a>
+              </p>
+              
+              <p>
+                <a href="#f4e7eb3a-d24a-46fe-9722-5e0517f77248" class="toc-page-link"><span>Testimonials</span></a>
+              </p>
+              
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Home</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="67205a23-ca7b-4507-b9da-14c09ee80f03" />
+                <h2>Home</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Services</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="470ce966-0d07-4cb6-87a8-bb7e4b71bd33" />
+                <h2>Services</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Company</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="597be23c-f2c6-498f-95e5-28d3ed3c1ca5" />
+                <h2>Company</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">404 Page</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="2e15d632-a336-4be7-899a-def32f7da66f" />
+                <h2>404 Page</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Terms and Conditions</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="2fd12747-736c-4e1e-b145-0a6eb0147d17" />
+                <h2>Terms and Conditions</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Support</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="5924dd27-47fa-4794-b5b6-f2b9817bd532" />
+                <h2>Support</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Business Finance</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="609bc0ab-1039-47bf-a88e-a89d974a322a" />
+                <h2>Business Finance</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Personal Finance</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="735ca77d-fc28-4563-98d7-117314a6b180" />
+                <h2>Personal Finance</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Log In</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="9066566a-618f-499a-bc5d-387cc2fa4f06" />
+                <h2>Log In</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Blog</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="97b0994f-2893-4867-a601-7def327f879f" />
+                <h2>Blog</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Careers</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="9e04f618-910c-411c-afc4-4aec3f64a92f" />
+                <h2>Careers</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">International Services</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="b57f773f-d137-405b-9bc4-5d8c0b4b5096" />
+                <h2>International Services</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Press Room</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="d4fc6752-725b-4823-a4cd-fb5373bcd4fa" />
+                <h2>Press Room</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+    <div class="page">
+      <table>
+        <thead>
+          <tr>
+            <td class="header">Testimonials</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <a name="f4e7eb3a-d24a-46fe-9722-5e0517f77248" />
+                <h2>Testimonials</h2>
+                <p>&lt;nil&gt;</p>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="footer">&nbsp;</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    
+  </body>
+</html>
+
+

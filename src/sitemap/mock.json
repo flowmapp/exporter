@@ -1,0 +1,1004 @@
+{
+  "id": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+  "projectId": "08385439-e5bd-46c7-b08b-bf6d7cc8d671",
+  "fileId": null,
+  "title": "Demo Sitemap",
+  "shareRole": null,
+  "estimates": [
+    {
+      "id": "3bec9903-5014-4a58-9c75-ad9ca20c71c0",
+      "sortIndex": "V",
+      "title": "Copyright",
+      "rate": 0,
+      "isFixedSum": false,
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+    },
+    {
+      "id": "4205216d-08df-4741-a97a-7c403def5597",
+      "sortIndex": "V",
+      "title": "Domain Purchase",
+      "rate": 0,
+      "isFixedSum": true,
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+    },
+    {
+      "id": "836689c4-cd5c-43a3-b619-24d79eb4ae67",
+      "sortIndex": "V",
+      "title": "QA",
+      "rate": 0,
+      "isFixedSum": false,
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+    },
+    {
+      "id": "a045a71b-4a5c-4f02-a15c-9e41fe1d88b2",
+      "sortIndex": "V",
+      "title": "Design",
+      "rate": 0,
+      "isFixedSum": false,
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+    },
+    {
+      "id": "a1d8c322-95e5-4b55-baf1-6bd3977c6162",
+      "sortIndex": "V",
+      "title": "Development",
+      "rate": 0,
+      "isFixedSum": false,
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+    }
+  ],
+  "sitemapLines": [],
+  "sitemapPages": [
+    {
+      "id": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "Root page",
+      "description": "<p>Some <span class=\"mce-annotation tox-comment\" data-mce-annotation-uid=\"c5262a7e-f3a4-4379-a26a-4cccdde85b73\" data-mce-annotation=\"tinycomments\" data-conversation-id=\"new\">text</span> here</p>\n<p><span class=\"mce-annotation tox-comment\" data-mce-annotation-uid=\"27da271c-cc8b-4d5a-9d9e-5d5b25e98aeb\" data-mce-annotation=\"tinycomments\" data-conversation-id=\"new\">Another</span> text</p>",
+      "parentId": null,
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": [
+        {
+          "id": "83392ea6-305d-4b7b-b337-d278ad8d1b1e",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "Pause",
+          "color": "#848DEA"
+        },
+        {
+          "id": "8ff3dc91-378d-4d25-9723-730c4376ba43",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "ASAP",
+          "color": "#FD6764"
+        },
+        {
+          "id": "da9df9b1-7e4a-4230-823a-609bbbea639d",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "New",
+          "color": "#FFD663"
+        }
+      ]
+    },
+    {
+      "id": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
+      "sortIndex": "%",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "Third child",
+      "description": null,
+      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "c2cff349-fb39-494c-ad87-712271f621f4",
+      "sortIndex": "$",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "Second child",
+      "description": "<figure class=\"full-width \"><img src=\"https://habrastorage.org/r/w1560/getpro/habr/upload_files/983/c46/08d/983c4608d7e8695c6208d15672398738.png\" width=\"347\" height=\"163\" data-src=\"https://habrastorage.org/getpro/habr/upload_files/983/c46/08d/983c4608d7e8695c6208d15672398738.png\">\n<figcaption></figcaption>\n</figure>\n<p><a href=\"https://habr.com/ru/post/542234/\" rel=\"noopener noreferrer nofollow\">В прошлой статье</a>&nbsp;я рассказал о различных особенностях некоторых общих настроек TypeScript. В данной статье речь пойдёт о так называемых &laquo;флагах строгости&raquo;.</p>\n<p>На самом деле, TypeScript из коробки мало чем отличается от JavaScript. Поэтому если изначально не подтюнить конфиг проекта, то большая часть преимуществ языка не будет задействована. Смысл использования TypeScript в таком виде есть, но небольшой.</p>",
+      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": [
+        {
+          "id": "8ff3dc91-378d-4d25-9723-730c4376ba43",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "ASAP",
+          "color": "#FD6764"
+        },
+        {
+          "id": "f5e77ac7-db78-47b7-9a75-d82e1a8f5cfd",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "In progress",
+          "color": "#58A8F7"
+        }
+      ]
+    },
+    {
+      "id": "271259de-9691-45ef-8dcd-14aa8369f258",
+      "sortIndex": "$",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "534534",
+      "description": null,
+      "parentId": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "fab23a7f-bd58-4940-82d2-180743c82431",
+      "sortIndex": "$",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "534534",
+      "description": null,
+      "parentId": "c2cff349-fb39-494c-ad87-712271f621f4",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rwerew",
+      "description": null,
+      "parentId": "fab23a7f-bd58-4940-82d2-180743c82431",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rwerew",
+      "description": null,
+      "parentId": "271259de-9691-45ef-8dcd-14aa8369f258",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "First child",
+      "description": "<h2 id=\"working-with-maps\">Working with maps<a class=\"Article-idLink\" href=\"https://go.dev/blog/maps#working-with-maps\" aria-label=\"Go to working-with-maps\">&para;</a></h2>\n<p>Go provides a familiar syntax for working with maps. This statement sets the key&nbsp;<code>\"route\"</code>&nbsp;to the value&nbsp;<code>66</code>:</p>\n<pre><code>m[\"route\"] = 66\n</code></pre>\n<p>This statement retrieves the value stored under the key&nbsp;<code>\"route\"</code>&nbsp;and assigns it to a new variable i:</p>\n<pre><code>i := m[\"route\"]\n</code></pre>\n<p>If the requested key doesn&rsquo;t exist, we get the value type&rsquo;s&nbsp;<em>zero value</em>. In this case the value type is&nbsp;<code>int</code>, so the zero value is&nbsp;<code>0</code>:</p>\n<pre><code>j := m[\"root\"]\n// j == 0\n</code></pre>\n<p>The built in&nbsp;<code>len</code>&nbsp;function returns on the number of items in a map:</p>\n<pre><code>n := len(m)\n</code></pre>\n<p>The built in&nbsp;<code>delete</code>&nbsp;function removes an entry from the map:</p>\n<pre><code>delete(m, \"route\")</code></pre>",
+      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [
+        {
+          "id": "04bdb579-ee5e-4ddb-bddb-5f5652b81009",
+          "estimateId": "3bec9903-5014-4a58-9c75-ad9ca20c71c0",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "amount": 2
+        },
+        {
+          "id": "d864705e-9547-4706-9c0a-80f7995abedb",
+          "estimateId": "a1d8c322-95e5-4b55-baf1-6bd3977c6162",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "amount": 50
+        },
+        {
+          "id": "e3439c0b-179c-4c28-befb-c26b2ea8230d",
+          "estimateId": "a045a71b-4a5c-4f02-a15c-9e41fe1d88b2",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "amount": 4
+        }
+      ],
+      "blocks": [
+        {
+          "id": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+          "sortIndex": "#¢",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "fileId": null,
+          "title": "Block",
+          "description": "<h1>Наполнение <strong>блока</strong>, <em>блеать</em>!</h1>\n<p>Без картинок</p>",
+          "color": "#6696ff",
+          "height": 238,
+          "backgroundOpacity": 100,
+          "pinTo": null,
+          "wireframePrimitives": [
+            {
+              "id": "0a1dad52-103b-44d8-aac1-50a3ed579072",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "#",
+              "type": "button",
+              "x": 126,
+              "y": 31,
+              "width": 179,
+              "height": 40,
+              "params": {
+                "t": "My button",
+                "br": 1
+              },
+              "files": []
+            },
+            {
+              "id": "1150f303-acf7-4285-8307-9cb63ebf43e3",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "%",
+              "type": "image",
+              "x": 660,
+              "y": 36,
+              "width": 120,
+              "height": 120,
+              "params": {},
+              "files": [
+                {
+                  "id": "52f9c31a-31b9-4e9e-9b16-0c4aa01fc3dd",
+                  "userId": "10d89946-caaf-4a3b-aeee-b60d1644211e",
+                  "entity": "WireframePrimitive",
+                  "path": "/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg",
+                  "size": 39,
+                  "originalName": "Rectangle 68.svg",
+                  "deleteUUID": null,
+                  "aliases": {
+                    "original": "https://fm-app-uploads-dev.s3.eu-central-1.amazonaws.com/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "24d56647-4506-412c-911e-7423d8f6d6d7",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "+",
+              "type": "circle",
+              "x": 45,
+              "y": 20,
+              "width": 57,
+              "height": 55,
+              "params": {},
+              "files": []
+            },
+            {
+              "id": "2a36327c-61ba-462d-b4dc-e30a06262347",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "-",
+              "type": "input",
+              "x": 635,
+              "y": 175,
+              "width": 160,
+              "height": 40,
+              "params": {
+                "t": "Disabled",
+                "di": 1,
+                "ph": "Search"
+              },
+              "files": []
+            },
+            {
+              "id": "3b1da9f1-44a1-4bae-b9c1-0c2f0373d5b2",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "(",
+              "type": "text",
+              "x": 405,
+              "y": 15,
+              "width": 150,
+              "height": 120,
+              "params": {
+                "c": 2,
+                "s": 1,
+                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
+                "fw": 2,
+                "ta": 2,
+                "iwf": 1
+              },
+              "files": []
+            },
+            {
+              "id": "73f70550-2634-4c0f-b4a2-6a2c0e71402a",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "$",
+              "type": "line",
+              "x": 0,
+              "y": 0,
+              "width": 4,
+              "height": 0,
+              "params": {
+                "c": 1,
+                "po": [
+                  [100, 100],
+                  [375, 100]
+                ]
+              },
+              "files": []
+            },
+            {
+              "id": "83fc4b2c-338b-40ce-9a1e-6e83e015825e",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": ",",
+              "type": "input",
+              "x": 415,
+              "y": 175,
+              "width": 160,
+              "height": 40,
+              "params": {
+                "di": 0,
+                "ph": "Search"
+              },
+              "files": []
+            },
+            {
+              "id": "b727537a-7a28-466b-95a1-4bfb4b80bae9",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "&",
+              "type": "text",
+              "x": 105,
+              "y": 112,
+              "width": 150,
+              "height": 40,
+              "params": {
+                "s": 2,
+                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
+                "fw": 2,
+                "ta": 3,
+                "iwf": 1
+              },
+              "files": []
+            },
+            {
+              "id": "b800f96f-7ff8-4846-bca8-35e31a1b2a1c",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": ")",
+              "type": "button",
+              "x": 885,
+              "y": 15,
+              "width": 179,
+              "height": 40,
+              "params": {
+                "t": "Disabled button",
+                "br": 1,
+                "di": 1
+              },
+              "files": []
+            },
+            {
+              "id": "c8c112a7-b31a-4c85-8ba5-2af622cbe019",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": ".",
+              "type": "line",
+              "x": 0,
+              "y": 0,
+              "width": 2,
+              "height": 0,
+              "params": {
+                "c": 2,
+                "po": [
+                  [665, 40],
+                  [1005, 185]
+                ]
+              },
+              "files": []
+            },
+            {
+              "id": "cc1f7ee1-9c57-449f-9e17-4d58712bb377",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "*",
+              "type": "rectangle",
+              "x": 876,
+              "y": 130,
+              "width": 134,
+              "height": 60,
+              "params": {},
+              "files": []
+            },
+            {
+              "id": "cf850ec5-b112-4378-b192-9c4090a2fe41",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "0",
+              "type": "icon",
+              "x": 555,
+              "y": 88,
+              "width": 79,
+              "height": 61,
+              "params": {
+                "c": 1,
+                "i": "😜",
+                "s": 3
+              },
+              "files": []
+            },
+            {
+              "id": "f3c83dab-21bb-4296-b731-4a3445f12392",
+              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
+              "sortIndex": "/",
+              "type": "icon",
+              "x": 33,
+              "y": 106,
+              "width": 40,
+              "height": 40,
+              "params": {
+                "c": 1,
+                "i": 1897,
+                "s": 3
+              },
+              "files": []
+            }
+          ]
+        },
+        {
+          "id": "4a71a31e-b782-4e18-bf07-82ed51509087",
+          "sortIndex": "#",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "fileId": null,
+          "title": "Block",
+          "description": "<p>Наполнение <strong>блока</strong>, <em>блеать</em>!<br>Ниже картинка<br><img src=\"https://bafista.ru/wp-content/uploads/2023/06/xpenology-install-logo1-1024x683.jpg\"><br>Выше картинка&nbsp;☝️</p>",
+          "color": "#6696ff",
+          "height": 238,
+          "backgroundOpacity": 100,
+          "pinTo": null,
+          "wireframePrimitives": [
+            {
+              "id": "08b08579-a251-4b26-85f9-d867fcdd38ed",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "+",
+              "type": "circle",
+              "x": 45,
+              "y": 20,
+              "width": 57,
+              "height": 55,
+              "params": {},
+              "files": []
+            },
+            {
+              "id": "22d9be9f-8845-4da6-b866-71599bbcd7e9",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "-",
+              "type": "input",
+              "x": 635,
+              "y": 175,
+              "width": 160,
+              "height": 40,
+              "params": {
+                "t": "Disabled",
+                "di": 1,
+                "ph": "Search"
+              },
+              "files": []
+            },
+            {
+              "id": "2e63c7b0-cb72-424c-9006-08c363735fbb",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "$",
+              "type": "line",
+              "x": 0,
+              "y": 0,
+              "width": 4,
+              "height": 0,
+              "params": {
+                "c": 1,
+                "po": [
+                  [415, 119],
+                  [686, 29]
+                ]
+              },
+              "files": []
+            },
+            {
+              "id": "7a57bff8-6a52-4c1c-9b1d-ed301a91eed4",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": ")",
+              "type": "button",
+              "x": 885,
+              "y": 15,
+              "width": 179,
+              "height": 40,
+              "params": {
+                "t": "Disabled button",
+                "br": 1,
+                "di": 1
+              },
+              "files": []
+            },
+            {
+              "id": "8027e7fa-3979-48ca-a2ac-1424c4bbc1a6",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "(",
+              "type": "text",
+              "x": 405,
+              "y": 15,
+              "width": 150,
+              "height": 120,
+              "params": {
+                "c": 2,
+                "s": 1,
+                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
+                "fw": 2,
+                "ta": 2,
+                "iwf": 1
+              },
+              "files": []
+            },
+            {
+              "id": "83b83570-84d2-4187-bb1c-2d7e40b69b9e",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "0",
+              "type": "icon",
+              "x": 316,
+              "y": 124,
+              "width": 79,
+              "height": 61,
+              "params": {
+                "c": 1,
+                "i": "😱",
+                "s": 3
+              },
+              "files": []
+            },
+            {
+              "id": "af4b8398-3a64-4990-8ef9-c1e5a53585bd",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "&",
+              "type": "text",
+              "x": 105,
+              "y": 112,
+              "width": 150,
+              "height": 40,
+              "params": {
+                "s": 2,
+                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
+                "fw": 2,
+                "ta": 3,
+                "iwf": 1
+              },
+              "files": []
+            },
+            {
+              "id": "b1a0d995-d138-4a88-a207-65964f1c4e80",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "%",
+              "type": "image",
+              "x": 660,
+              "y": 36,
+              "width": 120,
+              "height": 120,
+              "params": {},
+              "files": [
+                {
+                  "id": "2a81208b-2cde-4c88-b9a8-e3206580fd38",
+                  "userId": "10d89946-caaf-4a3b-aeee-b60d1644211e",
+                  "entity": "WireframePrimitive",
+                  "path": "/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg",
+                  "size": 39,
+                  "originalName": "Rectangle 68.svg",
+                  "deleteUUID": null,
+                  "aliases": {
+                    "original": "https://fm-app-uploads-dev.s3.eu-central-1.amazonaws.com/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "c70b1ff6-f879-475c-8916-23ee8b20c477",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "*",
+              "type": "rectangle",
+              "x": 876,
+              "y": 130,
+              "width": 134,
+              "height": 60,
+              "params": {},
+              "files": []
+            },
+            {
+              "id": "cebed9fc-b291-4de2-9775-f6d9c8f2ffcc",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": ",",
+              "type": "input",
+              "x": 415,
+              "y": 175,
+              "width": 160,
+              "height": 40,
+              "params": {
+                "t": "Normal",
+                "di": 0,
+                "ph": "Search"
+              },
+              "files": []
+            },
+            {
+              "id": "d1f3e220-ffc9-4a8c-aced-26b2a75199e3",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": ".",
+              "type": "line",
+              "x": 0,
+              "y": 0,
+              "width": 2,
+              "height": 0,
+              "params": {
+                "c": 2,
+                "po": [
+                  [665, 40],
+                  [1005, 185]
+                ]
+              },
+              "files": []
+            },
+            {
+              "id": "eee2e460-ef4e-4fbe-85a5-f12c7135ff6d",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "#",
+              "type": "button",
+              "x": 126,
+              "y": 31,
+              "width": 179,
+              "height": 40,
+              "params": {
+                "t": "My button",
+                "br": 1
+              },
+              "files": []
+            },
+            {
+              "id": "fc670982-7194-41f3-86a2-2991073a01b5",
+              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
+              "sortIndex": "/",
+              "type": "icon",
+              "x": 33,
+              "y": 106,
+              "width": 40,
+              "height": 40,
+              "params": {
+                "c": 1,
+                "i": 1897,
+                "s": 3
+              },
+              "files": []
+            }
+          ]
+        },
+        {
+          "id": "868038ad-b208-4a3f-ab3b-81763e42f04c",
+          "sortIndex": "$",
+          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+          "fileId": null,
+          "title": "Второй блок",
+          "description": "<p>&laquo;Титаник&raquo; имел восемь&nbsp;<a title=\"Палуба\" href=\"https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BB%D1%83%D0%B1%D0%B0\">палуб</a>: верхнюю&nbsp;&mdash; шлюпочную, и под ней семь палуб, обозначенных сверху вниз буквами от А до G. Расстояние между ними варьировалось от 250 до 320 сантиметров. Шлюпочная палуба и палуба А занимали только&nbsp;<a title=\"Надстройка (судостроение)\" href=\"https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_(%D1%81%D1%83%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5)\">надстройку</a>, а палуба G захватывала носовую&nbsp;&mdash; от котельных отделений до носа, и кормовую&nbsp;&mdash; от машинного отделения до среза кормы, части лайнера<sup id=\"cite_ref-_1ac94d6abac75dff_42-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dff-42\"><span class=\"cite-bracket\">[</span>39<span class=\"cite-bracket\">]</span></a></sup>. Носовой участок палубы G длиной 58&nbsp;м за счёт&nbsp;<a class=\"mw-redirect\" title=\"Седловатость\" href=\"https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%81%D1%82%D1%8C\">седловатости</a>&nbsp;был на 2&nbsp;м выше&nbsp;<a title=\"Ватерлиния\" href=\"https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F\">ватерлинии</a>&nbsp;около&nbsp;<a title=\"Форпик\" href=\"https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BF%D0%B8%D0%BA\">форпика</a>, а к&nbsp;<a title=\"Мидель\" href=\"https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%B4%D0%B5%D0%BB%D1%8C\">миделю</a>&nbsp;постепенно понижался. Здесь находилось 26 кают для 106 пассажиров третьего класса, остальную площадь занимали багажное и почтовое отделения, а также корт для сквоша. Носовой и кормовой участки нижней палубы разделяло восемь отсеков, в которых находились шесть котельных с угольными бункерами, машинное и турбинное отделения. В кормовой части палубы длиной 64&nbsp;м располагались продовольственные склады, кладовые и 60 двух-, четырёх- и шестиместных кают для 186 пассажиров третьего класса. Палубы C, D, E и F протягивались по всей длине судна<sup id=\"cite_ref-_1ac94d6abac75dfd_43-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dfd-43\"><span class=\"cite-bracket\">[</span>40<span class=\"cite-bracket\">]</span></a></sup>.</p>\n<p>На открытой шлюпочной палубе размещалось 20&nbsp;<a title=\"Спасательная шлюпка\" href=\"https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B0%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%88%D0%BB%D1%8E%D0%BF%D0%BA%D0%B0\">спасательных шлюпок</a>, вдоль бортов проходили променады (прогулочные палубы). Палубу A длиной 167&nbsp;м целиком занимали каюты, салоны и променады для пассажиров первого класса. Палуба В длиной в надстройке 170&nbsp;м прерывалась в носовой части, образуя открытое пространство над палубой С, а затем продолжалась в виде 38-метровой носовой надстройки с оборудованием для обслуживания&nbsp;<a title=\"Якорь\" href=\"https://ru.wikipedia.org/wiki/%D0%AF%D0%BA%D0%BE%D1%80%D1%8C\">якорей</a>&nbsp;и швартовным устройством. За носовой надстройкой размещалась прогулочная (так называемая межнадстроечная) палуба для пассажиров третьего класса длиной 15 м<sup id=\"cite_ref-_1ac94d6abac75dfe_44-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dfe-44\"><span class=\"cite-bracket\">[</span>41<span class=\"cite-bracket\">]</span></a></sup>.</p>",
+          "color": "#6696ff",
+          "height": 200,
+          "backgroundOpacity": 100,
+          "pinTo": null,
+          "wireframePrimitives": []
+        }
+      ],
+      "labels": [
+        {
+          "id": "a4316634-c795-4049-8cf1-a208104d36ed",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "Done",
+          "color": "#1cac49"
+        },
+        {
+          "id": "da9df9b1-7e4a-4230-823a-609bbbea639d",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "New",
+          "color": "#FFD663"
+        },
+        {
+          "id": "f5e77ac7-db78-47b7-9a75-d82e1a8f5cfd",
+          "sortIndex": "V",
+          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
+          "projectId": null,
+          "title": "In progress",
+          "color": "#58A8F7"
+        }
+      ]
+    },
+    {
+      "id": "1bb14ff8-eeb9-4176-ba70-c78c5f2d23aa",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rewrwe",
+      "description": null,
+      "parentId": "c2cff349-fb39-494c-ad87-712271f621f4",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "27182b12-8a8f-4055-9efa-3cb654335156",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "31231",
+      "description": null,
+      "parentId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "70fc326a-1335-4144-baf3-d0543212575f",
+      "sortIndex": "$",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "534534",
+      "description": null,
+      "parentId": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "8bcf929e-c8ef-478a-9774-4a0f19c67ba2",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "First separate",
+      "description": null,
+      "parentId": null,
+      "groupName": "header",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "b40c6d41-e2d2-4654-9616-4d03234c0ec0",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rewrwe",
+      "description": null,
+      "parentId": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "dddaa2db-dc36-4e50-b36c-fa768548d9f4",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rewrwe",
+      "description": null,
+      "parentId": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "e156f774-dc4f-4cd9-a5e4-841015ec885e",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "First footer",
+      "description": null,
+      "parentId": null,
+      "groupName": "footer",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "ebec538a-c5c5-463b-a146-e80e4816d89d",
+      "sortIndex": "$",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "534534",
+      "description": null,
+      "parentId": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    },
+    {
+      "id": "ee078edb-8503-41a1-980e-11c0ee0ec218",
+      "sortIndex": "#",
+      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
+      "title": "rewrwe",
+      "description": null,
+      "parentId": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null,
+      "estimates": [],
+      "blocks": [],
+      "labels": []
+    }
+  ]
+}

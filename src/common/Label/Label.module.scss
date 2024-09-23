@@ -1,0 +1,27 @@
+.label {
+  padding: 1px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  width: fit-content;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+.content {
+  max-width: 90px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  font-weight: 700;
+  font-size: 9px;
+  line-height: 12px;
+  text-align: center;
+  text-transform: uppercase;
+
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}

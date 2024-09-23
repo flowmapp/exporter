@@ -1,0 +1,14 @@
+export { default as ButtoncIcon } from './ButtoncIcon';
+export { default as ButtonsIcon } from './ButtonsIcon';
+export { default as CircleIcon } from './CircleIcon';
+export { default as DeviderIcon } from './DeviderIcon';
+export { default as DividerIcon } from './DividerIcon';
+export { default as DividerhIcon } from './DividerhIcon';
+export { default as DividervIcon } from './DividervIcon';
+export { default as H1Icon } from './H1Icon';
+export { default as IconIcon } from './IconIcon';
+export { default as ImageIcon } from './ImageIcon';
+export { default as InputIcon } from './InputIcon';
+export { default as SqareIcon } from './SqareIcon';
+export { default as SquareIcon } from './SquareIcon';
+export { default as TextIcon } from './TextIcon';

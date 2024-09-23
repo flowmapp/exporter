@@ -8,12 +8,12 @@
     "dev": "yarn dev:sitemap",
     "dev:sitemap": "yarn dev:sitemap:pdf",
     "dev:sitemap:pdf": "ENTITY=sitemap FORMAT=pdf yarn dev:launch",
-    "dev:launch": "babel-node dev.js"
+    "dev:launch": "tsx src/dev.js",
+    "tw": "tailwindcss -i ./src/input.css -o ./src/tw.css"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.8",
     "@babel/core": "^7.12.17",
-    "@babel/node": "^7.16.8",
     "@babel/preset-env": "^7.12.17",
     "@babel/preset-react": "^7.16.5",
     "esbuild": "^0.23.0",
@@ -26,11 +26,20 @@
     "eslint-plugin-react": "^7.35.0",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "tailwindcss": "^3.4.12"
   },
   "dependencies": {
     "@react-pdf/renderer": "^3.4.4",
-    "react": "^18.3.1"
+    "@types/react-dom": "^18.3.0",
+    "@vivliostyle/cli": "^8.14.1",
+    "classnames": "^2.5.1",
+    "primitive-compressor": "git+https://github.com/flowmapp/primitive-compressor",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
+    "uuid": "^10.0.0"
   },
   "lint-staged": {
     "*.js": [
