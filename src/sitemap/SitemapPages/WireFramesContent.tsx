@@ -29,26 +29,36 @@ type Props = {
 
 const WireFramesContent: React.FC<Props> = ({ blocks }) => {
   return (
-    <div
-      className="border-l border-solid border border-neutral-gray-120 overflow-auto"
-      style={{ marginBottom: `${32 / pixelsInMM}mm` }}
-    >
-      {blocks.map((block) => (
-        <div
-          key={block.id}
-          className="break-inside-avoid"
-          style={{ height: `${getBlockHeight(block)}mm`, position: 'relative', width: '18cm' }}
-        >
-          <BlockPrimitives block={block} />
-        </div>
-      ))}
+    <div style={{ marginBottom: `${32 / pixelsInMM}mm` }}>
+      {blocks.map((block) => {
+        const blockHeight = getBlockHeight(block)
+        const realHeight = Math.min(blockHeight, 250)
+        const transform = `scale(${realHeight / blockHeight})`
+        return (
+          <div key={block.id} className="break-inside-avoid" style={{ height: `${realHeight}mm` }}>
+            <div
+              style={{
+                height: `${blockHeight}mm`,
+                position: 'relative',
+                width: '18cm',
+                transform,
+                transformOrigin: 'top left',
+              }}
+            >
+              <BlockPrimitives block={block} />
+            </div>
+          </div>
+        )
+      })}
     </div>
   )
 }
 
 export default WireFramesContent
 
-const pixelsInMM = 1080 / 180
+const blockWidthInPixels = 1080
+const blockWidthInMM = 180
+const pixelsInMM = blockWidthInPixels / blockWidthInMM
 
 const BlockPrimitives: React.FC<{ block: SitemapPageBlockType }> = ({ block }) => {
   const primitives = block.wireframePrimitives?.sort(compareIndex)
@@ -361,6 +371,7 @@ function getButtonStyle(params: PrimitiveButton['params']): CSSProperties {
 
 const TextPrimitive: React.FC<{ primitive: PrimitiveText }> = ({ primitive }) => {
   const { params } = primitive
+  const { width } = getPrimitiveSize(primitive)
 
   return (
     <div
@@ -382,7 +393,7 @@ const TextPrimitive: React.FC<{ primitive: PrimitiveText }> = ({ primitive }) =>
       )}
       style={{
         color: params.color,
-        width: `${primitive.width / pixelsInMM}mm`,
+        width: `${width / pixelsInMM}mm`,
       }}
     />
   )
@@ -390,7 +401,7 @@ const TextPrimitive: React.FC<{ primitive: PrimitiveText }> = ({ primitive }) =>
 
 function getStylesImage(params: PrimitiveImage['params']): CSSProperties {
   return {
-    border: '1px solid #E0E0E0',
+    border: `${1 / pixelsInMM}mm solid #E0E0E0`,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -417,14 +428,14 @@ const ImagePrimitive: React.FC<{ primitive: PrimitiveImage }> = ({ primitive }) 
     <div className="relative overflow-hidden w-full h-full">
       {!image && (
         <div
-          className="absolute inline-block w-full h-full rounded-[1mm] bg-white"
+          className="absolute inline-block w-full h-full rounded-[1mm] border border-neutral-gray-120 bg-white"
           style={{
             background: `repeating-linear-gradient(
               135deg,
               #0000001f,
-              #0000001f 1px,
-              white 1px,
-              white 20px
+              #0000001f ${1 / pixelsInMM}mm,
+              white ${1 / pixelsInMM}mm,
+              white ${20 / pixelsInMM}mm
             )`,
           }}
         />
@@ -447,7 +458,7 @@ const ImagePrimitive: React.FC<{ primitive: PrimitiveImage }> = ({ primitive }) 
 }
 
 function getDefaultStyle(primitive: Primitive): CSSProperties {
-  const { width, height } = primitive
+  const { width, height } = getPrimitiveSize(primitive)
 
   const { x, y } = isPrimitiveLine(primitive) ? { x: 0, y: 0 } : primitive
 
@@ -460,6 +471,17 @@ function getDefaultStyle(primitive: Primitive): CSSProperties {
     width: `${width / pixelsInMM}mm`,
     height: `${height / pixelsInMM}mm`,
   }
+}
+
+function getPrimitiveSize(primitive: Primitive) {
+  const { width, height } = primitive
+  if (isPrimitiveText(primitive)) {
+    const { isWidthFixed } = primitive.params
+    if (isWidthFixed) return { width, height }
+    return { width: blockWidthInPixels - primitive.x, height }
+  }
+
+  return { width, height }
 }
 
 function getBlockHeight(block: SitemapPageBlockType) {

@@ -23,7 +23,7 @@
 
   @bottom-right {
     content: counter(page) ' / ' counter(pages);
-    font-size: 8pt;
+    font-size: 3mm;
   }
 }
 
@@ -39,17 +39,16 @@
   }
 
   h1 {
-    font-size: 40pt;
-    line-height: 48.41pt;
+    font-size: 14mm;
+    line-height: 20mm;
     font-weight: 500;
     color: var(--primary-basic-gray);
   }
 
   h2 {
-    font-size: 20pt;
+    font-size: 7mm;
     font-weight: 700;
-    line-height: 24pt;
-    letter-spacing: -0.04em;
+    line-height: 10mm;
     color: var(--primary-basic-gray);
   }
 
@@ -62,18 +61,9 @@
   }
 
   p {
-    font-size: 12pt;
-    line-height: 16pt;
-    letter-spacing: -1%;
+    font-size: calc(16 / 6) mm;
+    line-height: calc(20 / 6) mm;
     color: var(--primary-basic-gray);
-  }
-
-  .ant-modal-mask {
-    display: none;
-  }
-
-  .ant-modal-content {
-    display: none;
   }
 
   .tox-comment {
@@ -81,9 +71,9 @@
   }
 
   blockquote {
-    padding-left: 1rem !important;
-    margin-left: -1rem !important;
-    border-left: solid 4px var(--primary-basic-gray);
+    padding-left: 5mm !important;
+    margin-left: -5mm !important;
+    border-left: solid 1mm var(--primary-basic-gray);
   }
 
   ul {
@@ -95,6 +85,11 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
+
+    font-size: 5mm;
+    line-height: 7mm;
+    letter-spacing: -1%;
+    color: var(--primary-basic-gray);
   }
 
   ol {
@@ -106,6 +101,11 @@
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
+
+    font-size: 5mm;
+    line-height: 7mm;
+    letter-spacing: -1%;
+    color: var(--primary-basic-gray);
   }
 
   .toc-page-link-print::after {
@@ -241,9 +241,9 @@ body {
   justify-content: space-between;
   text-decoration: none;
   gap: 8px;
-  font-size: 14pt;
+  font-size: 5mm;
   font-weight: 500;
-  line-height: 20pt;
+  line-height: 7mm;
   letter-spacing: -0.01em;
   color: var(--primary-basic-gray);
   width: 100vw;

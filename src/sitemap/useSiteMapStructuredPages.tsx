@@ -1,7 +1,10 @@
 import { compareIndex } from 'src/common/sortOrder'
-import { SitemapPageType, SitemapPageTreeItem } from './generalTypes'
+import { SitemapPageTreeItem } from './generalTypes'
+import { usePrintContext } from './PrintContext'
 
-export const useSiteMapStructuredPages = (pages: SitemapPageType[]) => {
+export const useSiteMapStructuredPages = () => {
+  const { sitemap } = usePrintContext()
+  const pages = sitemap.sitemapPages
   const headerPages = pages.filter((item) => item.groupName === 'header').sort(compareIndex)
   const footerPages = pages.filter((item) => item.groupName === 'footer').sort(compareIndex)
   const mainPages: SitemapPageTreeItem[] = pages

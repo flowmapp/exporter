@@ -1,59 +1,20 @@
 {
-  "id": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-  "projectId": "08385439-e5bd-46c7-b08b-bf6d7cc8d671",
-  "fileId": null,
-  "title": "Demo Sitemap",
-  "shareRole": null,
-  "estimates": [
+  "Sitemap": [
     {
-      "id": "3bec9903-5014-4a58-9c75-ad9ca20c71c0",
-      "sortIndex": "V",
-      "title": "Copyright",
-      "rate": 0,
-      "isFixedSum": false,
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
-    },
-    {
-      "id": "4205216d-08df-4741-a97a-7c403def5597",
-      "sortIndex": "V",
-      "title": "Domain Purchase",
-      "rate": 0,
-      "isFixedSum": true,
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
-    },
-    {
-      "id": "836689c4-cd5c-43a3-b619-24d79eb4ae67",
-      "sortIndex": "V",
-      "title": "QA",
-      "rate": 0,
-      "isFixedSum": false,
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
-    },
-    {
-      "id": "a045a71b-4a5c-4f02-a15c-9e41fe1d88b2",
-      "sortIndex": "V",
-      "title": "Design",
-      "rate": 0,
-      "isFixedSum": false,
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
-    },
-    {
-      "id": "a1d8c322-95e5-4b55-baf1-6bd3977c6162",
-      "sortIndex": "V",
-      "title": "Development",
-      "rate": 0,
-      "isFixedSum": false,
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a"
+      "id": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "projectId": "9b177592-ba1f-4bcc-a4a8-9b391135c4a7",
+      "fileId": null,
+      "title": "Export sitemap",
+      "shareRole": null
     }
   ],
-  "sitemapLines": [],
-  "sitemapPages": [
+  "SitemapPage": [
     {
-      "id": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "id": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
       "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "Root page",
-      "description": "<p>Some <span class=\"mce-annotation tox-comment\" data-mce-annotation-uid=\"c5262a7e-f3a4-4379-a26a-4cccdde85b73\" data-mce-annotation=\"tinycomments\" data-conversation-id=\"new\">text</span> here</p>\n<p><span class=\"mce-annotation tox-comment\" data-mce-annotation-uid=\"27da271c-cc8b-4d5a-9d9e-5d5b25e98aeb\" data-mce-annotation=\"tinycomments\" data-conversation-id=\"new\">Another</span> text</p>",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "New page",
+      "description": "<h4>alwaysStrict</h4>\n<p><strong>Рекомендован: всегда / сложность: легко.</strong></p>\n<p>Флаг&nbsp;<code>alwaysStrict</code>&nbsp;включает добавление строки&nbsp;<code>\"use strict\"</code>&nbsp;в каждый скомпилированный файл. Другими словами,&nbsp;<code>alwaysStrict</code>&nbsp;включает&nbsp;<a href=\"https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">строгий режим JavaScript</a>&nbsp;и никак не связан с проверкой типов TypeScript.</p>\n<h4>strict</h4>\n<p><strong>Рекомендован: всегда / сложность: сложно / может быть заменён набором других флагов.</strong></p>\n<p>Флаг&nbsp;<code>strict</code>&nbsp;напрямую связан с проверкой типов. Его включение автоматически активирует абсолютно все флаги секции&nbsp;<code>Strict Checks</code>, включая и&nbsp;<code>alwaysStrict</code>. Это именно то, о чём я говорил в самом начале.</p>\n<p>У такого подхода есть как минимум один недостаток &ndash; неочевидность. Устанавливая&nbsp;<code>strict: true</code>, нет наглядного представления, какие именно проверки включены и какие опции вообще существуют. Для проектов, которые с самого начала пишутся на TypeScript это не так принципиально, как для проектов, которые поэтапно портируются с JavaScript.</p>\n<p>В процессе портирования существующего приложения нет возможности сразу включить все проверки. Приходится активировать их по одной шаг за шагом. Иногда даже случаются сложности, из-за которых приходится откатывать ранее установленные флаги обратно в&nbsp;<code>false</code>.</p>\n<p>Есть небольшая особенность работы флага&nbsp;<code>strict</code> &ndash; список подконтрольных ему флагов может пополняться по мере выхода новых версий TypeScript. Подобные моменты если случаются, то редко и всегда освещаются в release notes если, конечно, вы их читаете перед обновлением версии.</p>",
       "parentId": null,
       "groupName": "main",
       "displayType": "blocks",
@@ -66,43 +27,55 @@
       "seoDescription": null,
       "seoSlug": null,
       "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": [
-        {
-          "id": "83392ea6-305d-4b7b-b337-d278ad8d1b1e",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "Pause",
-          "color": "#848DEA"
-        },
-        {
-          "id": "8ff3dc91-378d-4d25-9723-730c4376ba43",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "ASAP",
-          "color": "#FD6764"
-        },
-        {
-          "id": "da9df9b1-7e4a-4230-823a-609bbbea639d",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "New",
-          "color": "#FFD663"
-        }
-      ]
+      "shareRole": null
     },
     {
-      "id": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
+      "id": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "sortIndex": "#",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "Second page",
+      "description": null,
+      "parentId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": "Main",
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null
+    },
+    {
+      "id": "0dd0b9bc-18a0-4459-990f-837fea145ccd",
+      "sortIndex": "$",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "Blog page",
+      "description": null,
+      "parentId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "groupName": "main",
+      "displayType": "blocks",
+      "fileId": null,
+      "color": "#6696ff",
+      "coversetCoverId": null,
+      "cover": "blank",
+      "pageLink": null,
+      "seoTitle": null,
+      "seoDescription": null,
+      "seoSlug": null,
+      "seoFileId": null,
+      "shareRole": null
+    },
+    {
+      "id": "13840b32-0331-413b-b362-89355b78f11c",
       "sortIndex": "%",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "Third child",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "rrr",
       "description": null,
-      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
+      "parentId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
       "groupName": "main",
       "displayType": "blocks",
       "fileId": null,
@@ -114,58 +87,15 @@
       "seoDescription": null,
       "seoSlug": null,
       "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
+      "shareRole": null
     },
     {
-      "id": "c2cff349-fb39-494c-ad87-712271f621f4",
-      "sortIndex": "$",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "Second child",
-      "description": "<figure class=\"full-width \"><img src=\"https://habrastorage.org/r/w1560/getpro/habr/upload_files/983/c46/08d/983c4608d7e8695c6208d15672398738.png\" width=\"347\" height=\"163\" data-src=\"https://habrastorage.org/getpro/habr/upload_files/983/c46/08d/983c4608d7e8695c6208d15672398738.png\">\n<figcaption></figcaption>\n</figure>\n<p><a href=\"https://habr.com/ru/post/542234/\" rel=\"noopener noreferrer nofollow\">В прошлой статье</a>&nbsp;я рассказал о различных особенностях некоторых общих настроек TypeScript. В данной статье речь пойдёт о так называемых &laquo;флагах строгости&raquo;.</p>\n<p>На самом деле, TypeScript из коробки мало чем отличается от JavaScript. Поэтому если изначально не подтюнить конфиг проекта, то большая часть преимуществ языка не будет задействована. Смысл использования TypeScript в таком виде есть, но небольшой.</p>",
-      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": [
-        {
-          "id": "8ff3dc91-378d-4d25-9723-730c4376ba43",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "ASAP",
-          "color": "#FD6764"
-        },
-        {
-          "id": "f5e77ac7-db78-47b7-9a75-d82e1a8f5cfd",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "In progress",
-          "color": "#58A8F7"
-        }
-      ]
-    },
-    {
-      "id": "271259de-9691-45ef-8dcd-14aa8369f258",
-      "sortIndex": "$",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "534534",
+      "id": "175a27a9-24a6-42cb-971b-bf3934be5351",
+      "sortIndex": "!/",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "Blog page 2",
       "description": null,
-      "parentId": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
+      "parentId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
       "groupName": "main",
       "displayType": "blocks",
       "fileId": null,
@@ -173,22 +103,19 @@
       "coversetCoverId": null,
       "cover": "blank",
       "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
+      "seoTitle": "Seo title, bleat",
+      "seoDescription": "Some description here",
+      "seoSlug": "/blog",
       "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
+      "shareRole": null
     },
     {
-      "id": "fab23a7f-bd58-4940-82d2-180743c82431",
-      "sortIndex": "$",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "534534",
+      "id": "1e74d9e4-3ceb-4530-8829-e8992faedf4b",
+      "sortIndex": "!5",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "new",
       "description": null,
-      "parentId": "c2cff349-fb39-494c-ad87-712271f621f4",
+      "parentId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
       "groupName": "main",
       "displayType": "blocks",
       "fileId": null,
@@ -200,673 +127,13 @@
       "seoDescription": null,
       "seoSlug": null,
       "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
+      "shareRole": null
     },
     {
-      "id": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
+      "id": "d2651615-c82d-43a2-ad6b-78b3035dd433",
       "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rwerew",
-      "description": null,
-      "parentId": "fab23a7f-bd58-4940-82d2-180743c82431",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rwerew",
-      "description": null,
-      "parentId": "271259de-9691-45ef-8dcd-14aa8369f258",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "First child",
-      "description": "<h2 id=\"working-with-maps\">Working with maps<a class=\"Article-idLink\" href=\"https://go.dev/blog/maps#working-with-maps\" aria-label=\"Go to working-with-maps\">&para;</a></h2>\n<p>Go provides a familiar syntax for working with maps. This statement sets the key&nbsp;<code>\"route\"</code>&nbsp;to the value&nbsp;<code>66</code>:</p>\n<pre><code>m[\"route\"] = 66\n</code></pre>\n<p>This statement retrieves the value stored under the key&nbsp;<code>\"route\"</code>&nbsp;and assigns it to a new variable i:</p>\n<pre><code>i := m[\"route\"]\n</code></pre>\n<p>If the requested key doesn&rsquo;t exist, we get the value type&rsquo;s&nbsp;<em>zero value</em>. In this case the value type is&nbsp;<code>int</code>, so the zero value is&nbsp;<code>0</code>:</p>\n<pre><code>j := m[\"root\"]\n// j == 0\n</code></pre>\n<p>The built in&nbsp;<code>len</code>&nbsp;function returns on the number of items in a map:</p>\n<pre><code>n := len(m)\n</code></pre>\n<p>The built in&nbsp;<code>delete</code>&nbsp;function removes an entry from the map:</p>\n<pre><code>delete(m, \"route\")</code></pre>",
-      "parentId": "3aa9f10d-29ee-49b5-86fa-3fe2fed7988c",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [
-        {
-          "id": "04bdb579-ee5e-4ddb-bddb-5f5652b81009",
-          "estimateId": "3bec9903-5014-4a58-9c75-ad9ca20c71c0",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "amount": 2
-        },
-        {
-          "id": "d864705e-9547-4706-9c0a-80f7995abedb",
-          "estimateId": "a1d8c322-95e5-4b55-baf1-6bd3977c6162",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "amount": 50
-        },
-        {
-          "id": "e3439c0b-179c-4c28-befb-c26b2ea8230d",
-          "estimateId": "a045a71b-4a5c-4f02-a15c-9e41fe1d88b2",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "amount": 4
-        }
-      ],
-      "blocks": [
-        {
-          "id": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-          "sortIndex": "#¢",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "fileId": null,
-          "title": "Block",
-          "description": "<h1>Наполнение <strong>блока</strong>, <em>блеать</em>!</h1>\n<p>Без картинок</p>",
-          "color": "#6696ff",
-          "height": 238,
-          "backgroundOpacity": 100,
-          "pinTo": null,
-          "wireframePrimitives": [
-            {
-              "id": "0a1dad52-103b-44d8-aac1-50a3ed579072",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "#",
-              "type": "button",
-              "x": 126,
-              "y": 31,
-              "width": 179,
-              "height": 40,
-              "params": {
-                "t": "My button",
-                "br": 1
-              },
-              "files": []
-            },
-            {
-              "id": "1150f303-acf7-4285-8307-9cb63ebf43e3",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "%",
-              "type": "image",
-              "x": 660,
-              "y": 36,
-              "width": 120,
-              "height": 120,
-              "params": {},
-              "files": [
-                {
-                  "id": "52f9c31a-31b9-4e9e-9b16-0c4aa01fc3dd",
-                  "userId": "10d89946-caaf-4a3b-aeee-b60d1644211e",
-                  "entity": "WireframePrimitive",
-                  "path": "/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg",
-                  "size": 39,
-                  "originalName": "Rectangle 68.svg",
-                  "deleteUUID": null,
-                  "aliases": {
-                    "original": "https://fm-app-uploads-dev.s3.eu-central-1.amazonaws.com/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "24d56647-4506-412c-911e-7423d8f6d6d7",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "+",
-              "type": "circle",
-              "x": 45,
-              "y": 20,
-              "width": 57,
-              "height": 55,
-              "params": {},
-              "files": []
-            },
-            {
-              "id": "2a36327c-61ba-462d-b4dc-e30a06262347",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "-",
-              "type": "input",
-              "x": 635,
-              "y": 175,
-              "width": 160,
-              "height": 40,
-              "params": {
-                "t": "Disabled",
-                "di": 1,
-                "ph": "Search"
-              },
-              "files": []
-            },
-            {
-              "id": "3b1da9f1-44a1-4bae-b9c1-0c2f0373d5b2",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "(",
-              "type": "text",
-              "x": 405,
-              "y": 15,
-              "width": 150,
-              "height": 120,
-              "params": {
-                "c": 2,
-                "s": 1,
-                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
-                "fw": 2,
-                "ta": 2,
-                "iwf": 1
-              },
-              "files": []
-            },
-            {
-              "id": "73f70550-2634-4c0f-b4a2-6a2c0e71402a",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "$",
-              "type": "line",
-              "x": 0,
-              "y": 0,
-              "width": 4,
-              "height": 0,
-              "params": {
-                "c": 1,
-                "po": [
-                  [100, 100],
-                  [375, 100]
-                ]
-              },
-              "files": []
-            },
-            {
-              "id": "83fc4b2c-338b-40ce-9a1e-6e83e015825e",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": ",",
-              "type": "input",
-              "x": 415,
-              "y": 175,
-              "width": 160,
-              "height": 40,
-              "params": {
-                "di": 0,
-                "ph": "Search"
-              },
-              "files": []
-            },
-            {
-              "id": "b727537a-7a28-466b-95a1-4bfb4b80bae9",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "&",
-              "type": "text",
-              "x": 105,
-              "y": 112,
-              "width": 150,
-              "height": 40,
-              "params": {
-                "s": 2,
-                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
-                "fw": 2,
-                "ta": 3,
-                "iwf": 1
-              },
-              "files": []
-            },
-            {
-              "id": "b800f96f-7ff8-4846-bca8-35e31a1b2a1c",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": ")",
-              "type": "button",
-              "x": 885,
-              "y": 15,
-              "width": 179,
-              "height": 40,
-              "params": {
-                "t": "Disabled button",
-                "br": 1,
-                "di": 1
-              },
-              "files": []
-            },
-            {
-              "id": "c8c112a7-b31a-4c85-8ba5-2af622cbe019",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": ".",
-              "type": "line",
-              "x": 0,
-              "y": 0,
-              "width": 2,
-              "height": 0,
-              "params": {
-                "c": 2,
-                "po": [
-                  [665, 40],
-                  [1005, 185]
-                ]
-              },
-              "files": []
-            },
-            {
-              "id": "cc1f7ee1-9c57-449f-9e17-4d58712bb377",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "*",
-              "type": "rectangle",
-              "x": 876,
-              "y": 130,
-              "width": 134,
-              "height": 60,
-              "params": {},
-              "files": []
-            },
-            {
-              "id": "cf850ec5-b112-4378-b192-9c4090a2fe41",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "0",
-              "type": "icon",
-              "x": 555,
-              "y": 88,
-              "width": 79,
-              "height": 61,
-              "params": {
-                "c": 1,
-                "i": "😜",
-                "s": 3
-              },
-              "files": []
-            },
-            {
-              "id": "f3c83dab-21bb-4296-b731-4a3445f12392",
-              "sitemapPageBlockId": "32c93082-e6f0-4265-8ec2-eeed1a8eef40",
-              "sortIndex": "/",
-              "type": "icon",
-              "x": 33,
-              "y": 106,
-              "width": 40,
-              "height": 40,
-              "params": {
-                "c": 1,
-                "i": 1897,
-                "s": 3
-              },
-              "files": []
-            }
-          ]
-        },
-        {
-          "id": "4a71a31e-b782-4e18-bf07-82ed51509087",
-          "sortIndex": "#",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "fileId": null,
-          "title": "Block",
-          "description": "<p>Наполнение <strong>блока</strong>, <em>блеать</em>!<br>Ниже картинка<br><img src=\"https://bafista.ru/wp-content/uploads/2023/06/xpenology-install-logo1-1024x683.jpg\"><br>Выше картинка&nbsp;☝️</p>",
-          "color": "#6696ff",
-          "height": 238,
-          "backgroundOpacity": 100,
-          "pinTo": null,
-          "wireframePrimitives": [
-            {
-              "id": "08b08579-a251-4b26-85f9-d867fcdd38ed",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "+",
-              "type": "circle",
-              "x": 45,
-              "y": 20,
-              "width": 57,
-              "height": 55,
-              "params": {},
-              "files": []
-            },
-            {
-              "id": "22d9be9f-8845-4da6-b866-71599bbcd7e9",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "-",
-              "type": "input",
-              "x": 635,
-              "y": 175,
-              "width": 160,
-              "height": 40,
-              "params": {
-                "t": "Disabled",
-                "di": 1,
-                "ph": "Search"
-              },
-              "files": []
-            },
-            {
-              "id": "2e63c7b0-cb72-424c-9006-08c363735fbb",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "$",
-              "type": "line",
-              "x": 0,
-              "y": 0,
-              "width": 4,
-              "height": 0,
-              "params": {
-                "c": 1,
-                "po": [
-                  [415, 119],
-                  [686, 29]
-                ]
-              },
-              "files": []
-            },
-            {
-              "id": "7a57bff8-6a52-4c1c-9b1d-ed301a91eed4",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": ")",
-              "type": "button",
-              "x": 885,
-              "y": 15,
-              "width": 179,
-              "height": 40,
-              "params": {
-                "t": "Disabled button",
-                "br": 1,
-                "di": 1
-              },
-              "files": []
-            },
-            {
-              "id": "8027e7fa-3979-48ca-a2ac-1424c4bbc1a6",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "(",
-              "type": "text",
-              "x": 405,
-              "y": 15,
-              "width": 150,
-              "height": 120,
-              "params": {
-                "c": 2,
-                "s": 1,
-                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
-                "fw": 2,
-                "ta": 2,
-                "iwf": 1
-              },
-              "files": []
-            },
-            {
-              "id": "83b83570-84d2-4187-bb1c-2d7e40b69b9e",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "0",
-              "type": "icon",
-              "x": 316,
-              "y": 124,
-              "width": 79,
-              "height": 61,
-              "params": {
-                "c": 1,
-                "i": "😱",
-                "s": 3
-              },
-              "files": []
-            },
-            {
-              "id": "af4b8398-3a64-4990-8ef9-c1e5a53585bd",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "&",
-              "type": "text",
-              "x": 105,
-              "y": 112,
-              "width": 150,
-              "height": 40,
-              "params": {
-                "s": 2,
-                "t": "Just text\n<u>with</u> two <i>strings</i>.\nFixed width, fixed <b>width, fixed</b> width, fixed width, fixed width",
-                "fw": 2,
-                "ta": 3,
-                "iwf": 1
-              },
-              "files": []
-            },
-            {
-              "id": "b1a0d995-d138-4a88-a207-65964f1c4e80",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "%",
-              "type": "image",
-              "x": 660,
-              "y": 36,
-              "width": 120,
-              "height": 120,
-              "params": {},
-              "files": [
-                {
-                  "id": "2a81208b-2cde-4c88-b9a8-e3206580fd38",
-                  "userId": "10d89946-caaf-4a3b-aeee-b60d1644211e",
-                  "entity": "WireframePrimitive",
-                  "path": "/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg",
-                  "size": 39,
-                  "originalName": "Rectangle 68.svg",
-                  "deleteUUID": null,
-                  "aliases": {
-                    "original": "https://fm-app-uploads-dev.s3.eu-central-1.amazonaws.com/10d89946-caaf-4a3b-aeee-b60d1644211e/WireframePrimitive/b1a0d995-d138-4a88-a207-65964f1c4e80/2a81208b-2cde-4c88-b9a8-e3206580fd38.svg"
-                  }
-                }
-              ]
-            },
-            {
-              "id": "c70b1ff6-f879-475c-8916-23ee8b20c477",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "*",
-              "type": "rectangle",
-              "x": 876,
-              "y": 130,
-              "width": 134,
-              "height": 60,
-              "params": {},
-              "files": []
-            },
-            {
-              "id": "cebed9fc-b291-4de2-9775-f6d9c8f2ffcc",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": ",",
-              "type": "input",
-              "x": 415,
-              "y": 175,
-              "width": 160,
-              "height": 40,
-              "params": {
-                "t": "Normal",
-                "di": 0,
-                "ph": "Search"
-              },
-              "files": []
-            },
-            {
-              "id": "d1f3e220-ffc9-4a8c-aced-26b2a75199e3",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": ".",
-              "type": "line",
-              "x": 0,
-              "y": 0,
-              "width": 2,
-              "height": 0,
-              "params": {
-                "c": 2,
-                "po": [
-                  [665, 40],
-                  [1005, 185]
-                ]
-              },
-              "files": []
-            },
-            {
-              "id": "eee2e460-ef4e-4fbe-85a5-f12c7135ff6d",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "#",
-              "type": "button",
-              "x": 126,
-              "y": 31,
-              "width": 179,
-              "height": 40,
-              "params": {
-                "t": "My button",
-                "br": 1
-              },
-              "files": []
-            },
-            {
-              "id": "fc670982-7194-41f3-86a2-2991073a01b5",
-              "sitemapPageBlockId": "4a71a31e-b782-4e18-bf07-82ed51509087",
-              "sortIndex": "/",
-              "type": "icon",
-              "x": 33,
-              "y": 106,
-              "width": 40,
-              "height": 40,
-              "params": {
-                "c": 1,
-                "i": 1897,
-                "s": 3
-              },
-              "files": []
-            }
-          ]
-        },
-        {
-          "id": "868038ad-b208-4a3f-ab3b-81763e42f04c",
-          "sortIndex": "$",
-          "sitemapPageId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-          "fileId": null,
-          "title": "Второй блок",
-          "description": "<p>&laquo;Титаник&raquo; имел восемь&nbsp;<a title=\"Палуба\" href=\"https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D0%BB%D1%83%D0%B1%D0%B0\">палуб</a>: верхнюю&nbsp;&mdash; шлюпочную, и под ней семь палуб, обозначенных сверху вниз буквами от А до G. Расстояние между ними варьировалось от 250 до 320 сантиметров. Шлюпочная палуба и палуба А занимали только&nbsp;<a title=\"Надстройка (судостроение)\" href=\"https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D0%B4%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0_(%D1%81%D1%83%D0%B4%D0%BE%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BD%D0%B8%D0%B5)\">надстройку</a>, а палуба G захватывала носовую&nbsp;&mdash; от котельных отделений до носа, и кормовую&nbsp;&mdash; от машинного отделения до среза кормы, части лайнера<sup id=\"cite_ref-_1ac94d6abac75dff_42-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dff-42\"><span class=\"cite-bracket\">[</span>39<span class=\"cite-bracket\">]</span></a></sup>. Носовой участок палубы G длиной 58&nbsp;м за счёт&nbsp;<a class=\"mw-redirect\" title=\"Седловатость\" href=\"https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B4%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D0%BE%D1%81%D1%82%D1%8C\">седловатости</a>&nbsp;был на 2&nbsp;м выше&nbsp;<a title=\"Ватерлиния\" href=\"https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D1%82%D0%B5%D1%80%D0%BB%D0%B8%D0%BD%D0%B8%D1%8F\">ватерлинии</a>&nbsp;около&nbsp;<a title=\"Форпик\" href=\"https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BF%D0%B8%D0%BA\">форпика</a>, а к&nbsp;<a title=\"Мидель\" href=\"https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%B4%D0%B5%D0%BB%D1%8C\">миделю</a>&nbsp;постепенно понижался. Здесь находилось 26 кают для 106 пассажиров третьего класса, остальную площадь занимали багажное и почтовое отделения, а также корт для сквоша. Носовой и кормовой участки нижней палубы разделяло восемь отсеков, в которых находились шесть котельных с угольными бункерами, машинное и турбинное отделения. В кормовой части палубы длиной 64&nbsp;м располагались продовольственные склады, кладовые и 60 двух-, четырёх- и шестиместных кают для 186 пассажиров третьего класса. Палубы C, D, E и F протягивались по всей длине судна<sup id=\"cite_ref-_1ac94d6abac75dfd_43-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dfd-43\"><span class=\"cite-bracket\">[</span>40<span class=\"cite-bracket\">]</span></a></sup>.</p>\n<p>На открытой шлюпочной палубе размещалось 20&nbsp;<a title=\"Спасательная шлюпка\" href=\"https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B0%D1%81%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F_%D1%88%D0%BB%D1%8E%D0%BF%D0%BA%D0%B0\">спасательных шлюпок</a>, вдоль бортов проходили променады (прогулочные палубы). Палубу A длиной 167&nbsp;м целиком занимали каюты, салоны и променады для пассажиров первого класса. Палуба В длиной в надстройке 170&nbsp;м прерывалась в носовой части, образуя открытое пространство над палубой С, а затем продолжалась в виде 38-метровой носовой надстройки с оборудованием для обслуживания&nbsp;<a title=\"Якорь\" href=\"https://ru.wikipedia.org/wiki/%D0%AF%D0%BA%D0%BE%D1%80%D1%8C\">якорей</a>&nbsp;и швартовным устройством. За носовой надстройкой размещалась прогулочная (так называемая межнадстроечная) палуба для пассажиров третьего класса длиной 15 м<sup id=\"cite_ref-_1ac94d6abac75dfe_44-0\" class=\"reference\"><a href=\"https://ru.wikipedia.org/wiki/%D0%A2%D0%B8%D1%82%D0%B0%D0%BD%D0%B8%D0%BA#cite_note-_1ac94d6abac75dfe-44\"><span class=\"cite-bracket\">[</span>41<span class=\"cite-bracket\">]</span></a></sup>.</p>",
-          "color": "#6696ff",
-          "height": 200,
-          "backgroundOpacity": 100,
-          "pinTo": null,
-          "wireframePrimitives": []
-        }
-      ],
-      "labels": [
-        {
-          "id": "a4316634-c795-4049-8cf1-a208104d36ed",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "Done",
-          "color": "#1cac49"
-        },
-        {
-          "id": "da9df9b1-7e4a-4230-823a-609bbbea639d",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "New",
-          "color": "#FFD663"
-        },
-        {
-          "id": "f5e77ac7-db78-47b7-9a75-d82e1a8f5cfd",
-          "sortIndex": "V",
-          "workspaceId": "c04e8867-43be-4869-971b-8447534fef08",
-          "projectId": null,
-          "title": "In progress",
-          "color": "#58A8F7"
-        }
-      ]
-    },
-    {
-      "id": "1bb14ff8-eeb9-4176-ba70-c78c5f2d23aa",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rewrwe",
-      "description": null,
-      "parentId": "c2cff349-fb39-494c-ad87-712271f621f4",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "27182b12-8a8f-4055-9efa-3cb654335156",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "31231",
-      "description": null,
-      "parentId": "d8f2eee2-e543-4931-80a9-2e755ce57a8c",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "70fc326a-1335-4144-baf3-d0543212575f",
-      "sortIndex": "$",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "534534",
-      "description": null,
-      "parentId": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "8bcf929e-c8ef-478a-9774-4a0f19c67ba2",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "First separate",
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016",
+      "title": "Separete",
       "description": null,
       "parentId": null,
       "groupName": "header",
@@ -880,125 +147,1656 @@
       "seoDescription": null,
       "seoSlug": null,
       "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "b40c6d41-e2d2-4654-9616-4d03234c0ec0",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rewrwe",
-      "description": null,
-      "parentId": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "dddaa2db-dc36-4e50-b36c-fa768548d9f4",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rewrwe",
-      "description": null,
-      "parentId": "c2304ae3-46d2-43d1-82cb-d7a3095795c3",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "e156f774-dc4f-4cd9-a5e4-841015ec885e",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "First footer",
-      "description": null,
-      "parentId": null,
-      "groupName": "footer",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "ebec538a-c5c5-463b-a146-e80e4816d89d",
-      "sortIndex": "$",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "534534",
-      "description": null,
-      "parentId": "4126b0cc-f234-42d0-b01c-400e7bff4e80",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
-    },
-    {
-      "id": "ee078edb-8503-41a1-980e-11c0ee0ec218",
-      "sortIndex": "#",
-      "sitemapId": "60e0adb5-0b41-4298-8107-eb7db1998c0a",
-      "title": "rewrwe",
-      "description": null,
-      "parentId": "a6a5e452-adf4-466a-a1e3-3ef6a871b0fb",
-      "groupName": "main",
-      "displayType": "blocks",
-      "fileId": null,
-      "color": "#6696ff",
-      "coversetCoverId": null,
-      "cover": "blank",
-      "pageLink": null,
-      "seoTitle": null,
-      "seoDescription": null,
-      "seoSlug": null,
-      "seoFileId": null,
-      "shareRole": null,
-      "estimates": [],
-      "blocks": [],
-      "labels": []
+      "shareRole": null
     }
-  ]
+  ],
+  "SitemapPageBlock": [
+    {
+      "id": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "#",
+      "sitemapPageId": "0dd0b9bc-18a0-4459-990f-837fea145ccd",
+      "fileId": null,
+      "title": "Blog post 01",
+      "description": null,
+      "color": "#3af3ff",
+      "height": 1920,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "#",
+      "sitemapPageId": "175a27a9-24a6-42cb-971b-bf3934be5351",
+      "fileId": null,
+      "title": "Blog post 01",
+      "description": null,
+      "color": "#3af3ff",
+      "height": 1920,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "$¢",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Gallery 02",
+      "description": null,
+      "color": "#ffa334",
+      "height": 946,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "2a22db5d-806e-423a-933e-77734949821b",
+      "sortIndex": "#",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Navbar 01",
+      "description": null,
+      "color": "#f5cc00",
+      "height": 72,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "%",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Navbar 07",
+      "description": null,
+      "color": "#f5cc00",
+      "height": 72,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "$;",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Footer 06",
+      "description": null,
+      "color": "#36eb8d",
+      "height": 152,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "$",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Navbar 02",
+      "description": null,
+      "color": "#f5cc00",
+      "height": 72,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "!¢",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Navbar 04",
+      "description": null,
+      "color": "#f5cc00",
+      "height": 72,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "f5adc6b9-1bb8-4c92-8799-e6c4110c98dc",
+      "sortIndex": "$R",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "fileId": null,
+      "title": "Gallery 03",
+      "description": null,
+      "color": "#ffa334",
+      "height": 738,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "14eea914-82f2-49cf-b618-9f9202b26711",
+      "sortIndex": "$",
+      "sitemapPageId": "d2651615-c82d-43a2-ad6b-78b3035dd433",
+      "fileId": null,
+      "title": "r3534",
+      "description": null,
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "28eb524d-82e6-47ed-b065-976217ccd361",
+      "sortIndex": "%",
+      "sitemapPageId": "d2651615-c82d-43a2-ad6b-78b3035dd433",
+      "fileId": null,
+      "title": "fdsgdgs",
+      "description": null,
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "533a5cb5-a436-4f52-a4b1-b40510208a14",
+      "sortIndex": "#",
+      "sitemapPageId": "d2651615-c82d-43a2-ad6b-78b3035dd433",
+      "fileId": null,
+      "title": "rewrwe",
+      "description": null,
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "b22144bf-e84d-42a2-bd9b-09479c957555",
+      "sortIndex": "&",
+      "sitemapPageId": "d2651615-c82d-43a2-ad6b-78b3035dd433",
+      "fileId": null,
+      "title": "234rsdfsdf",
+      "description": null,
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": null
+    },
+    {
+      "id": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "#",
+      "sitemapPageId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "fileId": null,
+      "title": "Block",
+      "description": "<h2 id=\"compiling-an-npm-package\" tabindex=\"-1\">Compiling an npm package<a class=\"header-anchor\" href=\"https://tsx.is/compilation#compiling-an-npm-package\" aria-label=\"Permalink to &quot;Compiling an npm package&quot;\">​</a></h2>\n<p>npm packages are distinguished from applications by defining package entry-points in&nbsp;<code>package.json</code>.</p>\n<p><a href=\"https://github.com/privatenumber/pkgroll\" target=\"_blank\" rel=\"noopener noreferrer\">pkgroll</a>&nbsp;is the recommended bundler for projects using&nbsp;<em>tsx</em>. It's developed by the same author and used to compile&nbsp;<em>tsx</em>.</p>\n<p>Given your source files are in the&nbsp;<code>src</code>&nbsp;directory, it automatically infers how to build your package based on the entry points defined in&nbsp;<code>package.json</code>&nbsp;by outputting them to the&nbsp;<code>dist</code> directory.</p>",
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": "bottom"
+    },
+    {
+      "id": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "#",
+      "sitemapPageId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "fileId": null,
+      "title": "Pinned",
+      "description": "<h5><code>options.detached</code><a id=\"optionsdetached\" class=\"mark\" href=\"https://nodejs.org/api/child_process.html#optionsdetached\">#</a><a id=\"child_process_options_detached\" class=\"legacy\" aria-hidden=\"true\"></a></h5>\n<div class=\"api_metadata\">Added in: v0.7.10</div>\n<p>On Windows, setting&nbsp;<code>options.detached</code>&nbsp;to&nbsp;<code>true</code>&nbsp;makes it possible for the child process to continue running after the parent exits. The child will have its own console window. Once enabled for a child process, it cannot be disabled.</p>\n<p>On non-Windows platforms, if&nbsp;<code>options.detached</code>&nbsp;is set to&nbsp;<code>true</code>, the child process will be made the leader of a new process group and session. Child processes may continue running after the parent exits regardless of whether they are detached or not. See&nbsp;<a href=\"http://man7.org/linux/man-pages/man2/setsid.2.html\"><code>setsid(2)</code></a>&nbsp;for more information.</p>\n<p>By default, the parent will wait for the detached child to exit. To prevent the parent from waiting for a given&nbsp;<code>subprocess</code>&nbsp;to exit, use the&nbsp;<code>subprocess.unref()</code>&nbsp;method. Doing so will cause the parent's event loop to not include the child in its reference count, allowing the parent to exit independently of the child, unless there is an established IPC channel between the child and the parent.</p>\n<p>When using the&nbsp;<code>detached</code>&nbsp;option to start a long-running process, the process will not stay running in the background after the parent exits unless it is provided with a&nbsp;<code>stdio</code>&nbsp;configuration that is not connected to the parent. If the parent's&nbsp;<code>stdio</code>&nbsp;is inherited, the child will remain attached to the controlling terminal.</p>\n<p>Example of a long-running process, by detaching and also ignoring its parent&nbsp;<code>stdio</code>&nbsp;file descriptors, in order to ignore the parent's termination:</p>\n<pre class=\"with-48-chars\"><input class=\"js-flavor-toggle\" type=\"checkbox\" aria-label=\"Show modern ES modules syntax\"></pre>",
+      "color": "#6696ff",
+      "height": 200,
+      "backgroundOpacity": 100,
+      "pinTo": "top"
+    }
+  ],
+  "WireframePrimitive": [
+    {
+      "id": "07ee1bbc-50ea-4e67-bfbe-23a86d5883c2",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 40,
+      "y": 590,
+      "width": 320,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "1c1655e1-60c9-4a54-bcca-d890b4b4b469",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 40,
+      "y": 250,
+      "width": 1000,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "63d52fab-e102-42d7-9ceb-30383474a906",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "V",
+      "type": "text",
+      "x": 210,
+      "y": 81,
+      "width": 294,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Gallery headline</b>", "fw": 2 }
+    },
+    {
+      "id": "a5e86cdc-9129-45f2-811a-d7968102a459",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "V",
+      "type": "text",
+      "x": 211,
+      "y": 131,
+      "width": 406,
+      "height": 40,
+      "params": {
+        "c": 2,
+        "s": 2,
+        "t": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada commodo nulla nec efficitur.",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "e2e1cad8-6c67-4a66-8eed-eb4812b1511e",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "W",
+      "type": "image",
+      "x": 380,
+      "y": 590,
+      "width": 320,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "e8c0d93e-8d0b-4915-b119-d1ddd38186d0",
+      "sitemapPageBlockId": "159b95fa-4571-480d-87ee-dfdcc992cdb4",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 720,
+      "y": 590,
+      "width": 320,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "37250033-2113-48f9-951d-dfeb95c31940",
+      "sitemapPageBlockId": "2a22db5d-806e-423a-933e-77734949821b",
+      "sortIndex": "&",
+      "type": "text",
+      "x": 40,
+      "y": 16,
+      "width": 74,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Logo</b>", "fw": 2 }
+    },
+    {
+      "id": "71a488d6-7ca3-4727-a575-4bf718711660",
+      "sitemapPageBlockId": "2a22db5d-806e-423a-933e-77734949821b",
+      "sortIndex": "%",
+      "type": "button",
+      "x": 836,
+      "y": 16,
+      "width": 90,
+      "height": 40,
+      "params": { "t": "Login", "bc": 2 }
+    },
+    {
+      "id": "7cb8384a-9948-492d-8816-acc3b509dd3e",
+      "sitemapPageBlockId": "2a22db5d-806e-423a-933e-77734949821b",
+      "sortIndex": "$",
+      "type": "button",
+      "x": 935,
+      "y": 16,
+      "width": 80,
+      "height": 40,
+      "params": { "t": "Sign Up" }
+    },
+    {
+      "id": "2a8c7e1a-b8f2-476e-98db-a913f7d7f765",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "V",
+      "type": "button",
+      "x": 935,
+      "y": 16,
+      "width": 104,
+      "height": 40,
+      "params": { "t": "Contact", "br": 1 }
+    },
+    {
+      "id": "59f3c228-5fa3-4581-b5be-20cc13ddd759",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "V",
+      "type": "text",
+      "x": 500,
+      "y": 16,
+      "width": 76,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Logo</b>", "fw": 2 }
+    },
+    {
+      "id": "5bf8950e-2c50-44e1-b288-e0955d5bc6c8",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "Y",
+      "type": "text",
+      "x": 211,
+      "y": 26,
+      "width": 90,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Three", "fw": 2 }
+    },
+    {
+      "id": "8fae510c-ebbb-4276-ab4e-0a22e2cccc2c",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "X",
+      "type": "text",
+      "x": 125,
+      "y": 26,
+      "width": 52,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Two", "fw": 2 }
+    },
+    {
+      "id": "a138b90a-55ad-4fcd-8bb7-1b46a80ca241",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "W",
+      "type": "text",
+      "x": 40,
+      "y": 26,
+      "width": 65,
+      "height": 20,
+      "params": { "s": 2, "t": "Link One", "fw": 2 }
+    },
+    {
+      "id": "c8e565db-0284-4a14-bb17-d67e399cbd23",
+      "sitemapPageBlockId": "3281be69-11a3-4be9-ba00-40c40cee237e",
+      "sortIndex": "Z",
+      "type": "text",
+      "x": 309,
+      "y": 26,
+      "width": 33,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Four", "fw": 2 }
+    },
+    {
+      "id": "04391f2e-9ad5-4263-8c02-ae7b6125352a",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 235,
+      "y": 1456,
+      "width": 635,
+      "height": 60,
+      "params": {
+        "t": "<i>\"Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus.\"</i>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "06b0aef9-18ef-4c74-a48d-9453d86f1c5d",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "-",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 2,
+      "height": 0,
+      "params": {
+        "c": 1,
+        "po": [
+          [210, 1805],
+          [870, 1805]
+        ]
+      }
+    },
+    {
+      "id": "1b669506-ec1b-442e-9a12-d9b01b795468",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "&",
+      "type": "text",
+      "x": 348,
+      "y": 165,
+      "width": 20,
+      "height": 16,
+      "params": { "c": 2, "s": 1, "t": "|", "fw": 2 }
+    },
+    {
+      "id": "1f25ec2a-7e30-4ade-b2c3-b2638d7efa11",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ")",
+      "type": "text",
+      "x": 360,
+      "y": 165,
+      "width": 60,
+      "height": 16,
+      "params": { "s": 1, "t": "5 min read", "fw": 2 }
+    },
+    {
+      "id": "24a438b2-884d-4f58-aabd-53c5f9a124e1",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 330,
+      "y": 1745,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2510, "s": 3 }
+    },
+    {
+      "id": "357a1350-405c-4156-9978-bfc1d6fc389e",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 210,
+      "y": 710,
+      "width": 660,
+      "height": 20,
+      "params": {
+        "t": "<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec placerat sem. Aliquam molestie quam vel elit imperdiet, ut feugiat est commodo. </b><p></p>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "393fe88c-bc52-4163-88ca-8917288fdb0c",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "#",
+      "type": "text",
+      "x": 210,
+      "y": 60,
+      "width": 272,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Blog post title</b>", "fw": 2 }
+    },
+    {
+      "id": "442b4360-62ae-4875-993a-95004ce73d2e",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "%",
+      "type": "circle",
+      "x": 210,
+      "y": 135,
+      "width": 50,
+      "height": 50,
+      "params": {}
+    },
+    {
+      "id": "4545faf6-6d14-4050-b4c5-3056669a4c74",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 210,
+      "y": 655,
+      "width": 272,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Introduction</b>", "fw": 2 }
+    },
+    {
+      "id": "52de9d25-c143-4ecb-979d-b32155f734c2",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "+",
+      "type": "image",
+      "x": 40,
+      "y": 225,
+      "width": 1000,
+      "height": 350,
+      "params": {}
+    },
+    {
+      "id": "57fd0183-9115-43d8-90d5-444e27e85800",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 210,
+      "y": 1745,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 2879, "s": 3 }
+    },
+    {
+      "id": "598e8eac-b264-440f-abc6-dfedf07b54ea",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 765,
+      "y": 155,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 3726, "s": 3 }
+    },
+    {
+      "id": "6a52333c-2626-4189-8c42-9201697a62a7",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 845,
+      "y": 155,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2510, "s": 3 }
+    },
+    {
+      "id": "6bcbe5f0-ed50-4ec8-894e-f0fe1a59e92c",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "#",
+      "type": "text",
+      "x": 210,
+      "y": 815,
+      "width": 660,
+      "height": 380,
+      "params": {
+        "s": 2,
+        "t": "Sed vehicula sodales sodales. Proin condimentum molestie dapibus. Phasellus et faucibus est. Quisque laoreet consectetur interdum. Cras in odio in mauris tincidunt finibus. Quisque hendrerit facilisis condimentum. Curabitur ornare hendrerit nisi non dictum.<p></p><p><span>Suspendisse mollis sem pharetra convallis bibendum. Duis nec nibh est. Donec et magna pellentesque, pharetra massa id, tincidunt neque. Donec vulputate libero quis tortor condimentum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut sed euismod diam. Duis finibus dui id augue dapibus, in pretium tellus consequat. Nam convallis lacus sit amet turpis lacinia, vitae rhoncus nisi ornare. Pellentesque eget mi laoreet risus scelerisque viverra non euismod purus. In sed turpis iaculis, efficitur magna ac, finibus leo. Nullam vitae quam at turpis pulvinar pretium.</span><br /></p>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "6c44773e-ee9a-45cc-9baf-fb0639dc33e6",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "*",
+      "type": "icon",
+      "x": 725,
+      "y": 155,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 2879, "s": 3 }
+    },
+    {
+      "id": "7184bb31-4979-45e5-9386-f4e22320bb3b",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ".",
+      "type": "circle",
+      "x": 210,
+      "y": 1845,
+      "width": 50,
+      "height": 50,
+      "params": {}
+    },
+    {
+      "id": "79c48a1e-59aa-4f91-be48-a6e52ab05212",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "(",
+      "type": "text",
+      "x": 271,
+      "y": 139,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Name Surname</b>", "fw": 2 }
+    },
+    {
+      "id": "7b2fc294-3a6b-44e4-b0b7-33e476e60515",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "text",
+      "x": 211,
+      "y": 1709,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Share this post</b>", "fw": 2 }
+    },
+    {
+      "id": "7c5673bc-b438-408a-8d4b-0cf4f68388e7",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "text",
+      "x": 271,
+      "y": 1874,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 1, "t": "Job title, Company", "fw": 2 }
+    },
+    {
+      "id": "805afb0e-de62-4673-a7e8-0e39f5ffabcc",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "-",
+      "type": "text",
+      "x": 210,
+      "y": 1570,
+      "width": 660,
+      "height": 380,
+      "params": {
+        "s": 2,
+        "t": "Sed vehicula sodales sodales. Proin condimentum molestie dapibus. Phasellus et faucibus est. Quisque laoreet consectetur interdum. Cras in odio in mauris tincidunt finibus. Quisque hendrerit facilisis condimentum. Curabitur ornare hendrerit nisi non dictum.",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "835f1f96-666c-4863-ba72-9492c584df63",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ",",
+      "type": "image",
+      "x": 210,
+      "y": 1110,
+      "width": 660,
+      "height": 300,
+      "params": {}
+    },
+    {
+      "id": "9eb7966c-74aa-4bee-b073-661e712b4bfd",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": ",",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 4,
+      "height": 0,
+      "params": {
+        "c": 2,
+        "po": [
+          [212, 1452],
+          [212, 1532]
+        ]
+      }
+    },
+    {
+      "id": "a2b54a93-2c36-4798-90a6-11067ff4d2fe",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 250,
+      "y": 1745,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 3726, "s": 3 }
+    },
+    {
+      "id": "aad6941f-95e7-4fb1-93a0-0237614de33d",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "/",
+      "type": "text",
+      "x": 271,
+      "y": 1849,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Name Surname</b>", "fw": 2 }
+    },
+    {
+      "id": "c7cfdff6-1032-49a0-9c77-735780f4afdc",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "$",
+      "type": "text",
+      "x": 271,
+      "y": 165,
+      "width": 71,
+      "height": 16,
+      "params": { "s": 1, "t": "01 Jan 2024", "fw": 2 }
+    },
+    {
+      "id": "d683803e-db56-4bf6-bd1b-1d9ed53223aa",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 290,
+      "y": 1745,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2881, "s": 3 }
+    },
+    {
+      "id": "fa3dd7a7-31da-4f87-9a00-a2c652750e29",
+      "sitemapPageBlockId": "3e2608aa-72d5-4907-8924-6818d533058c",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 805,
+      "y": 155,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2881, "s": 3 }
+    },
+    {
+      "id": "112fe2ec-34ce-44c0-ae0f-a573527bb999",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 97,
+      "y": 102,
+      "width": 221,
+      "height": 16,
+      "params": { "s": 1, "t": "Terms of Use", "fw": 2 }
+    },
+    {
+      "id": "1537e490-2ca7-4f08-9453-b32c0902acf9",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "&",
+      "type": "text",
+      "x": 398,
+      "y": 35,
+      "width": 51,
+      "height": 16,
+      "params": { "s": 1, "t": "Link Two", "fw": 2 }
+    },
+    {
+      "id": "2e3e061b-7ecb-44ee-8cfc-b772ea36d328",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ")",
+      "type": "text",
+      "x": 550,
+      "y": 35,
+      "width": 52,
+      "height": 16,
+      "params": { "s": 1, "t": "Link Four", "fw": 2 }
+    },
+    {
+      "id": "3b443a15-6a46-4ea9-bc2a-addbed389fcd",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ")",
+      "type": "text",
+      "x": 693,
+      "y": 35,
+      "width": 44,
+      "height": 16,
+      "params": { "s": 1, "t": "Link Six", "fw": 2 }
+    },
+    {
+      "id": "3e7501fb-7dd5-4611-8610-e76d62b526a5",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 40,
+      "y": 102,
+      "width": 221,
+      "height": 16,
+      "params": { "s": 1, "t": "Privacy", "fw": 2 }
+    },
+    {
+      "id": "79029654-7674-4b95-9763-ead9d947c6aa",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "+",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 0,
+      "params": {
+        "c": 1,
+        "po": [
+          [43, 75.5],
+          [1040, 74]
+        ]
+      }
+    },
+    {
+      "id": "8d7637d9-bed1-4c31-9281-57c98bc51b72",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "*",
+      "type": "text",
+      "x": 921,
+      "y": 35,
+      "width": 162,
+      "height": 20,
+      "params": { "s": 1, "t": "info@flowmapp.com", "fw": 2, "ta": 3 }
+    },
+    {
+      "id": "8f8597c9-429f-4c99-b467-6d1b16342441",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "%",
+      "type": "text",
+      "x": 328,
+      "y": 35,
+      "width": 50,
+      "height": 16,
+      "params": { "s": 1, "t": "Link One", "fw": 2 }
+    },
+    {
+      "id": "9d0f4116-7bff-47f6-b2be-915c210ea7b0",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ")",
+      "type": "text",
+      "x": 623,
+      "y": 35,
+      "width": 50,
+      "height": 16,
+      "params": { "s": 1, "t": "Link Five", "fw": 2 }
+    },
+    {
+      "id": "a9342eb9-e465-4599-935c-294b34f6457d",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "(",
+      "type": "text",
+      "x": 470,
+      "y": 35,
+      "width": 60,
+      "height": 16,
+      "params": { "s": 1, "t": "Link Three", "fw": 2 }
+    },
+    {
+      "id": "ac33accb-5f1b-4ee9-b639-3547bd926842",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 250,
+      "y": 102,
+      "width": 221,
+      "height": 16,
+      "params": { "s": 1, "t": "Coockies", "fw": 2 }
+    },
+    {
+      "id": "c821d02a-5a0d-4eec-ac36-62b60b5f586f",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 187,
+      "y": 102,
+      "width": 221,
+      "height": 16,
+      "params": { "s": 1, "t": "Security", "fw": 2 }
+    },
+    {
+      "id": "ca737992-9069-4e30-88cd-9a18e5565a21",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": "$",
+      "type": "text",
+      "x": 41,
+      "y": 31,
+      "width": 91,
+      "height": 24,
+      "params": { "t": "<b>Logo</b>", "fw": 2 }
+    },
+    {
+      "id": "daf70f5e-2acc-4b6a-af82-20102e7377a2",
+      "sitemapPageBlockId": "414cfb08-0ea4-40da-9bbd-723645154460",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 819,
+      "y": 102,
+      "width": 221,
+      "height": 16,
+      "params": { "s": 1, "t": "© 2024 FlowMapp. All rights reserved.", "fw": 2, "ta": 3 }
+    },
+    {
+      "id": "06b51861-bbe6-4f33-a3e9-1bb77873f767",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "Z",
+      "type": "text",
+      "x": 632,
+      "y": 26,
+      "width": 33,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Four", "fw": 2 }
+    },
+    {
+      "id": "5415ce28-7cda-4810-8a16-8d5afdcc5d4c",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "V",
+      "type": "text",
+      "x": 40,
+      "y": 16,
+      "width": 136,
+      "height": 24,
+      "params": { "s": 4, "t": "<b>Logo</b>", "fw": 2 }
+    },
+    {
+      "id": "60440fbb-d4d0-4667-80de-61af681e7d98",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "Y",
+      "type": "text",
+      "x": 534,
+      "y": 26,
+      "width": 90,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Three", "fw": 2 }
+    },
+    {
+      "id": "bbc7380b-c823-482b-9389-bf1a31cee632",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "X",
+      "type": "text",
+      "x": 448,
+      "y": 26,
+      "width": 52,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Two", "fw": 2 }
+    },
+    {
+      "id": "c6a6d1c9-f792-4623-83d5-424006e27ec5",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "V",
+      "type": "button",
+      "x": 936,
+      "y": 16,
+      "width": 104,
+      "height": 40,
+      "params": { "t": "Sign Up" }
+    },
+    {
+      "id": "d083dadc-c8ec-4f66-b34d-831481ea4185",
+      "sitemapPageBlockId": "469cf84c-2be8-4d4c-b163-0aa3dd1345b8",
+      "sortIndex": "W",
+      "type": "text",
+      "x": 363,
+      "y": 26,
+      "width": 65,
+      "height": 20,
+      "params": { "s": 2, "t": "Link One", "fw": 2 }
+    },
+    {
+      "id": "082674a4-2a3f-405f-bcf9-d2e30ecc32e2",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 290,
+      "y": 1745,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2881, "s": 3 }
+    },
+    {
+      "id": "0a6e08d6-5dd8-4555-b0bf-287b452bf82d",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ",",
+      "type": "image",
+      "x": 210,
+      "y": 1110,
+      "width": 660,
+      "height": 300,
+      "params": {}
+    },
+    {
+      "id": "1f82312c-3a39-4db2-95c2-91b5a33b9d77",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "%",
+      "type": "circle",
+      "x": 210,
+      "y": 135,
+      "width": 50,
+      "height": 50,
+      "params": {}
+    },
+    {
+      "id": "5a5a8e22-9eea-484d-aa07-275ee7f9ecf8",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "text",
+      "x": 211,
+      "y": 1709,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Share this post</b>", "fw": 2 }
+    },
+    {
+      "id": "66bdc2d1-afac-4196-978c-44048933762d",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "+",
+      "type": "image",
+      "x": 40,
+      "y": 225,
+      "width": 1000,
+      "height": 350,
+      "params": {}
+    },
+    {
+      "id": "6ad42464-71ef-4b45-b84f-6a511e367c0f",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 235,
+      "y": 1456,
+      "width": 635,
+      "height": 60,
+      "params": {
+        "t": "<i>\"Ipsum sit mattis nulla quam nulla. Gravida id gravida ac enim mauris id. Non pellentesque congue eget consectetur turpis. Sapien, dictum molestie sem tempor. Diam elit, orci, tincidunt aenean tempus.\"</i>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "6d528105-9f8f-4d32-87b9-a5d8dbde6716",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 765,
+      "y": 155,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 3726, "s": 3 }
+    },
+    {
+      "id": "6dea5225-50e4-41a7-b28d-796f05aa6f4d",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "-",
+      "type": "text",
+      "x": 210,
+      "y": 1570,
+      "width": 660,
+      "height": 380,
+      "params": {
+        "s": 2,
+        "t": "Sed vehicula sodales sodales. Proin condimentum molestie dapibus. Phasellus et faucibus est. Quisque laoreet consectetur interdum. Cras in odio in mauris tincidunt finibus. Quisque hendrerit facilisis condimentum. Curabitur ornare hendrerit nisi non dictum.",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "6e3e98b2-24fd-4db6-8101-ae76d590e0ae",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 250,
+      "y": 1745,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 3726, "s": 3 }
+    },
+    {
+      "id": "7b8496c8-2107-4810-b81f-aed7415c17b8",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ".",
+      "type": "circle",
+      "x": 210,
+      "y": 1845,
+      "width": 50,
+      "height": 50,
+      "params": {}
+    },
+    {
+      "id": "87c448db-e421-4e50-9e3a-9d35477d245e",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ",",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 4,
+      "height": 0,
+      "params": {
+        "c": 2,
+        "po": [
+          [212, 1452],
+          [212, 1532]
+        ]
+      }
+    },
+    {
+      "id": "9c541e1e-df9e-4292-b77a-16270948d587",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "-",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 2,
+      "height": 0,
+      "params": {
+        "c": 1,
+        "po": [
+          [210, 1805],
+          [870, 1805]
+        ]
+      }
+    },
+    {
+      "id": "b24c14f7-f8b5-40ef-94db-e7fda43f7027",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 845,
+      "y": 155,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2510, "s": 3 }
+    },
+    {
+      "id": "b575419a-8afa-4c0b-9d0e-8e9fd2891dde",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "(",
+      "type": "text",
+      "x": 271,
+      "y": 139,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Name Surname</b>", "fw": 2 }
+    },
+    {
+      "id": "b72de3f1-bf75-4708-bb4b-fcb02b3e5447",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ")",
+      "type": "text",
+      "x": 360,
+      "y": 165,
+      "width": 60,
+      "height": 16,
+      "params": { "s": 1, "t": "5 min read", "fw": 2 }
+    },
+    {
+      "id": "c1f3ebf6-8bbb-44a9-ad0e-5cce43d221db",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 210,
+      "y": 655,
+      "width": 272,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Introduction</b>", "fw": 2 }
+    },
+    {
+      "id": "c7b7c01b-0db5-4c39-ac1a-58f7f5c9f76d",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "+",
+      "type": "icon",
+      "x": 805,
+      "y": 155,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2881, "s": 3 }
+    },
+    {
+      "id": "d42da839-adaa-43ec-852e-0afd6e0f7421",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 330,
+      "y": 1745,
+      "width": 22,
+      "height": 20,
+      "params": { "c": 1, "i": 2510, "s": 3 }
+    },
+    {
+      "id": "dbc8aef0-406c-4edd-94d8-534bb7957df9",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "icon",
+      "x": 210,
+      "y": 1745,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 2879, "s": 3 }
+    },
+    {
+      "id": "e4d3dfd3-50b0-48a3-8aca-88c8f69bcd9a",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": ",",
+      "type": "text",
+      "x": 210,
+      "y": 710,
+      "width": 660,
+      "height": 20,
+      "params": {
+        "t": "<b>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec placerat sem. Aliquam molestie quam vel elit imperdiet, ut feugiat est commodo. </b><p></p>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "eb06e778-2123-4c2b-bf35-6739a4a1071d",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "#",
+      "type": "text",
+      "x": 210,
+      "y": 60,
+      "width": 272,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Blog post title</b>", "fw": 2 }
+    },
+    {
+      "id": "ebc77a43-9135-4924-a2bd-3cf632b74074",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "/",
+      "type": "text",
+      "x": 271,
+      "y": 1849,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 2, "t": "<b>Name Surname</b>", "fw": 2 }
+    },
+    {
+      "id": "ec654ffc-da08-460b-864e-c7be3cc4bd03",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "*",
+      "type": "icon",
+      "x": 725,
+      "y": 155,
+      "width": 22,
+      "height": 23,
+      "params": { "c": 1, "i": 2879, "s": 3 }
+    },
+    {
+      "id": "f074daac-6c13-4b99-b2ba-760ad605d25f",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "#",
+      "type": "text",
+      "x": 210,
+      "y": 815,
+      "width": 660,
+      "height": 380,
+      "params": {
+        "s": 2,
+        "t": "Sed vehicula sodales sodales. Proin condimentum molestie dapibus. Phasellus et faucibus est. Quisque laoreet consectetur interdum. Cras in odio in mauris tincidunt finibus. Quisque hendrerit facilisis condimentum. Curabitur ornare hendrerit nisi non dictum.<p></p><p><span>Suspendisse mollis sem pharetra convallis bibendum. Duis nec nibh est. Donec et magna pellentesque, pharetra massa id, tincidunt neque. Donec vulputate libero quis tortor condimentum fermentum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut sed euismod diam. Duis finibus dui id augue dapibus, in pretium tellus consequat. Nam convallis lacus sit amet turpis lacinia, vitae rhoncus nisi ornare. Pellentesque eget mi laoreet risus scelerisque viverra non euismod purus. In sed turpis iaculis, efficitur magna ac, finibus leo. Nullam vitae quam at turpis pulvinar pretium.</span><br /></p>",
+        "fw": 2,
+        "iwf": 1
+      }
+    },
+    {
+      "id": "f3ac64a5-848c-4d37-a697-a0681a0d711b",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "$",
+      "type": "text",
+      "x": 271,
+      "y": 165,
+      "width": 71,
+      "height": 16,
+      "params": { "s": 1, "t": "01 Jan 2024", "fw": 2 }
+    },
+    {
+      "id": "f73270fc-da23-4d14-806f-40a70f638bc4",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "&",
+      "type": "text",
+      "x": 348,
+      "y": 165,
+      "width": 20,
+      "height": 16,
+      "params": { "c": 2, "s": 1, "t": "|", "fw": 2 }
+    },
+    {
+      "id": "fadb0aee-3577-4f58-adc1-ae4cc8d32d82",
+      "sitemapPageBlockId": "65bb0422-5ebc-4ec2-8130-f0001273b25e",
+      "sortIndex": "0",
+      "type": "text",
+      "x": 271,
+      "y": 1874,
+      "width": 117,
+      "height": 20,
+      "params": { "s": 1, "t": "Job title, Company", "fw": 2 }
+    },
+    {
+      "id": "2e645e7e-c54b-45ee-984d-7e3ccc9ab0f7",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "V",
+      "type": "button",
+      "x": 911,
+      "y": 16,
+      "width": 104,
+      "height": 40,
+      "params": { "t": "Try for free" }
+    },
+    {
+      "id": "5864df2e-d39b-4937-9552-3cbe8dc5a307",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "V",
+      "type": "text",
+      "x": 40,
+      "y": 16,
+      "width": 74,
+      "height": 40,
+      "params": { "s": 4, "t": "<b>Logo</b>", "fw": 2 }
+    },
+    {
+      "id": "5f6ae672-22c7-4c96-b375-be3481734803",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "W",
+      "type": "text",
+      "x": 134,
+      "y": 28,
+      "width": 65,
+      "height": 20,
+      "params": { "s": 2, "t": "Link One", "fw": 2 }
+    },
+    {
+      "id": "76fadee1-4ce1-4e73-b45d-064fda62e041",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "Y",
+      "type": "text",
+      "x": 304,
+      "y": 28,
+      "width": 90,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Three", "fw": 2 }
+    },
+    {
+      "id": "7bf1d010-cab5-421b-903c-c44983a2c1fe",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "X",
+      "type": "text",
+      "x": 219,
+      "y": 28,
+      "width": 52,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Two", "fw": 2 }
+    },
+    {
+      "id": "95fd83f8-0213-470e-a44e-1f4b76d067f0",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "]",
+      "type": "text",
+      "x": 485,
+      "y": 31,
+      "width": 69,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Fourr", "fw": 2 }
+    },
+    {
+      "id": "c86f1c81-3f3e-4596-816b-479a3b26ef5b",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "[",
+      "type": "text",
+      "x": 841,
+      "y": 28,
+      "width": 33,
+      "height": 20,
+      "params": { "s": 2, "t": "Sign in", "fw": 2 }
+    },
+    {
+      "id": "ca8af30d-950b-48fa-ac19-bdfcbb190ef6",
+      "sitemapPageBlockId": "d854dfd4-7020-44b1-a0b6-3008c6ae2ed3",
+      "sortIndex": "Z",
+      "type": "text",
+      "x": 402,
+      "y": 28,
+      "width": 33,
+      "height": 20,
+      "params": { "s": 2, "t": "Link Four", "fw": 2 }
+    },
+    {
+      "id": "4b706912-6202-4cf5-a491-3e3ec73d247b",
+      "sitemapPageBlockId": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "#",
+      "type": "line",
+      "x": 0,
+      "y": 0,
+      "width": 2,
+      "height": 0,
+      "params": {
+        "c": 1,
+        "po": [
+          [61, 50],
+          [261, 50]
+        ]
+      }
+    },
+    {
+      "id": "57ce3fc0-cdf6-4aaa-9152-4a6ff90fb9da",
+      "sitemapPageBlockId": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "(",
+      "type": "input",
+      "x": 532,
+      "y": 134,
+      "width": 160,
+      "height": 40,
+      "params": { "di": 0, "ph": "Search" }
+    },
+    {
+      "id": "58afd97d-8da9-4137-a837-37b5bcc24f2a",
+      "sitemapPageBlockId": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "%",
+      "type": "input",
+      "x": 532,
+      "y": 134,
+      "width": 160,
+      "height": 40,
+      "params": { "di": 0, "ph": "Search" }
+    },
+    {
+      "id": "b545af0b-ec6d-44a1-8ccd-d94635a643d7",
+      "sitemapPageBlockId": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "&",
+      "type": "circle",
+      "x": 314,
+      "y": 120,
+      "width": 40,
+      "height": 40,
+      "params": {}
+    },
+    {
+      "id": "ce1c825d-7409-4f4c-a140-fd65e7236831",
+      "sitemapPageBlockId": "e9f30e35-c2b0-4970-8d4e-2c06dd60f83f",
+      "sortIndex": "$",
+      "type": "circle",
+      "x": 314,
+      "y": 120,
+      "width": 40,
+      "height": 40,
+      "params": {}
+    },
+    {
+      "id": "111f6b05-32d3-4a14-bb07-2de7941270d1",
+      "sitemapPageBlockId": "f5adc6b9-1bb8-4c92-8799-e6c4110c98dc",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 40,
+      "y": 40,
+      "width": 320,
+      "height": 660,
+      "params": {}
+    },
+    {
+      "id": "30fde27d-17d1-47b1-afab-62cdc3c50a59",
+      "sitemapPageBlockId": "f5adc6b9-1bb8-4c92-8799-e6c4110c98dc",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 380,
+      "y": 380,
+      "width": 320,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "9c905aa1-208a-40b0-aac6-f9042e816c48",
+      "sitemapPageBlockId": "f5adc6b9-1bb8-4c92-8799-e6c4110c98dc",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 720,
+      "y": 380,
+      "width": 320,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "ef591480-8b4d-481f-858b-a5fdcee644ab",
+      "sitemapPageBlockId": "f5adc6b9-1bb8-4c92-8799-e6c4110c98dc",
+      "sortIndex": "V",
+      "type": "image",
+      "x": 380,
+      "y": 40,
+      "width": 660,
+      "height": 320,
+      "params": {}
+    },
+    {
+      "id": "0c09ce59-ce18-4ea5-b14d-09e8b7aa98f3",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "(",
+      "type": "circle",
+      "x": 405,
+      "y": 120,
+      "width": 40,
+      "height": 40,
+      "params": {}
+    },
+    {
+      "id": "571739ef-afe7-4c7a-a245-a506527d8293",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "%",
+      "type": "button",
+      "x": 367,
+      "y": 27,
+      "width": 100,
+      "height": 40,
+      "params": { "t": "Let's go" }
+    },
+    {
+      "id": "da0df6a5-f297-43e2-ad46-62af7120f22c",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "#",
+      "type": "button",
+      "x": 137,
+      "y": 76,
+      "width": 100,
+      "height": 40,
+      "params": { "t": "Let's go", "br": 1 }
+    },
+    {
+      "id": "ea355c03-40e3-4c93-a0ec-9ed372ba66f2",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "&",
+      "type": "input",
+      "x": 512,
+      "y": 114,
+      "width": 160,
+      "height": 40,
+      "params": { "di": 0, "ph": "Search" }
+    },
+    {
+      "id": "f99e820d-faae-42c7-932b-530c1f314c95",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": ")",
+      "type": "input",
+      "x": 710,
+      "y": 25,
+      "width": 160,
+      "height": 40,
+      "params": { "di": 0, "ph": "Search" }
+    },
+    {
+      "id": "feb28a8c-fa94-4171-a78a-35720d3c4bd4",
+      "sitemapPageBlockId": "f69512bf-be1a-4943-87c3-bca3f6c040b3",
+      "sortIndex": "$",
+      "type": "circle",
+      "x": 294,
+      "y": 100,
+      "width": 40,
+      "height": 40,
+      "params": {}
+    }
+  ],
+  "WireframePrimitiveFile": [],
+  "SitemapPageLabel": [
+    {
+      "id": "0ba02b91-9893-4c2e-af87-4a9c0ac20eec",
+      "sitemapPageId": "0dd0b9bc-18a0-4459-990f-837fea145ccd",
+      "labelId": "a78764e2-6ef3-4362-a4a4-345c627d6ff0"
+    },
+    {
+      "id": "aebdafb0-160f-46c1-b938-fce5d3cf35e9",
+      "sitemapPageId": "13840b32-0331-413b-b362-89355b78f11c",
+      "labelId": "a53bd471-4f95-43b5-93bc-de28f1516c72"
+    },
+    {
+      "id": "427ff884-89c9-4202-a074-5a23ddfc8605",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "labelId": "a53bd471-4f95-43b5-93bc-de28f1516c72"
+    },
+    {
+      "id": "f0f54f72-4425-44cf-8182-7d4970a42aaf",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "labelId": "a78764e2-6ef3-4362-a4a4-345c627d6ff0"
+    },
+    {
+      "id": "0498f5a2-def9-44ff-9baf-2150829bb159",
+      "sitemapPageId": "b1022deb-43cf-4e9c-ad57-80ad6c2a5756",
+      "labelId": "b30e7f6a-218e-4b8f-af88-ccc5a63a63ca"
+    },
+    {
+      "id": "6bdf19ab-6023-4773-a971-d9748adacd4a",
+      "sitemapPageId": "d2651615-c82d-43a2-ad6b-78b3035dd433",
+      "labelId": "b30e7f6a-218e-4b8f-af88-ccc5a63a63ca"
+    }
+  ],
+  "Label": [
+    {
+      "id": "a53bd471-4f95-43b5-93bc-de28f1516c72",
+      "sortIndex": "#",
+      "workspaceId": "70f28344-bc8d-4e86-baec-ca418b2bee1f",
+      "projectId": "9b177592-ba1f-4bcc-a4a8-9b391135c4a7",
+      "title": "New label",
+      "color": "#3af3ff"
+    },
+    {
+      "id": "a78764e2-6ef3-4362-a4a4-345c627d6ff0",
+      "sortIndex": "#",
+      "workspaceId": "70f28344-bc8d-4e86-baec-ca418b2bee1f",
+      "projectId": "9b177592-ba1f-4bcc-a4a8-9b391135c4a7",
+      "title": "In progress",
+      "color": "#36eb8d"
+    },
+    {
+      "id": "b30e7f6a-218e-4b8f-af88-ccc5a63a63ca",
+      "sortIndex": "#",
+      "workspaceId": "70f28344-bc8d-4e86-baec-ca418b2bee1f",
+      "projectId": "9b177592-ba1f-4bcc-a4a8-9b391135c4a7",
+      "title": "Label",
+      "color": "#f5cc00"
+    }
+  ],
+  "SitemapLine": [],
+  "Estimate": [
+    {
+      "id": "27c1e0be-3a96-4ecf-88f0-a485195026cb",
+      "sortIndex": "V",
+      "title": "QA",
+      "rate": 11,
+      "isFixedSum": false,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    },
+    {
+      "id": "9a5040c3-3f62-4d2c-bc70-9a821b176864",
+      "sortIndex": "V",
+      "title": "Design",
+      "rate": 12,
+      "isFixedSum": false,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    },
+    {
+      "id": "aec820c7-d29a-4eaf-be0d-b5b84bf12c75",
+      "sortIndex": "V",
+      "title": "Domain Purchase",
+      "rate": 220,
+      "isFixedSum": true,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    },
+    {
+      "id": "c0a1a1a8-1e9a-43d0-aa2c-dc0343a9b6b5",
+      "sortIndex": "V",
+      "title": "Copyright",
+      "rate": 13,
+      "isFixedSum": false,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    },
+    {
+      "id": "c1f890d2-eea6-4de1-8e94-95ec60b93a58",
+      "sortIndex": "W",
+      "title": "New Cost",
+      "rate": 0,
+      "isFixedSum": false,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    },
+    {
+      "id": "d828bd2b-917f-4b13-8a14-f32cd083ce60",
+      "sortIndex": "V",
+      "title": "Development",
+      "rate": 14,
+      "isFixedSum": false,
+      "sitemapId": "27549a0e-5eab-40cd-b9b7-4116a5f85016"
+    }
+  ],
+  "SitemapPageEstimate": [
+    {
+      "id": "4cc3be07-a1b3-4c92-a509-7a8355b74c3d",
+      "estimateId": "c0a1a1a8-1e9a-43d0-aa2c-dc0343a9b6b5",
+      "sitemapPageId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "amount": 15
+    },
+    {
+      "id": "759cd2ac-7975-49c6-bc6b-65fc31be38d9",
+      "estimateId": "9a5040c3-3f62-4d2c-bc70-9a821b176864",
+      "sitemapPageId": "0dd0b9bc-18a0-4459-990f-837fea145ccd",
+      "amount": 3
+    },
+    {
+      "id": "9c617d01-50e7-4124-9cef-3460e68067a1",
+      "estimateId": "27c1e0be-3a96-4ecf-88f0-a485195026cb",
+      "sitemapPageId": "dc911cf2-4ae7-4610-a9d0-080ee4f3aa65",
+      "amount": 20
+    },
+    {
+      "id": "b4c25294-1940-4611-80c6-7d454a80fdb1",
+      "estimateId": "d828bd2b-917f-4b13-8a14-f32cd083ce60",
+      "sitemapPageId": "0dd0b9bc-18a0-4459-990f-837fea145ccd",
+      "amount": 400
+    }
+  ],
+  "Project": [
+    {
+      "id": "9b177592-ba1f-4bcc-a4a8-9b391135c4a7",
+      "workspaceId": "70f28344-bc8d-4e86-baec-ca418b2bee1f",
+      "fileId": null,
+      "title": "My New Project",
+      "description": "<div class=\"mb-6 prose text-gray-900 dark:prose-dark md:prose-lg md:dark:prose-lg-dark dark:text-gray-100 dark:prose-a:text-blue-300 dark:hover:prose-a:text-blue-200 prose-a:text-blue-500 hover:prose-a-:text-blue-600 mt-14\">\n<p>CSS uses a global namespace for CSS Selectors that can easily result in style conflicts throughout your application when building an application using modern web components. You can avoid this problem by nesting CSS selectors or use a styling convention like BEM but this becomes complicated quickly and won&rsquo;t scale.</p>\n<p>CSS-in-JS avoids these problems entirely by generating unique class names when styles are converted to CSS. This allows you to think about styles on a component level with out worrying about styles defined elsewhere.</p>\n<p>In this course, you will learn how to express popular SCSS (Sass) language features using latest JavaScript features. We will convert simple examples from SCSS to CSS-in-JS. As a designer or (S)CSS developer, you should be able to follow without extensive JavaScript knowledge, understanding SCSS is required though. We will not be using any particular CSSinJS libraries. Instead, we will focus on a base knowledge you need later if you use any CSSinJS library.</p>\n</div>\n<div class=\"mt-8 \">\n<h2 class=\"text-lg font-semibold mb-3\">Learner Reviews</h2>\n<ul class=\"space-y-5 md:space-y-0  md:grid-cols-2 grid gap-3\">\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">How will you use what you learned from this course?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>the javascript concepts are useful, but not sure about implementing a css framework inside javascript is</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fbe43e0f76c335a9e235ae735e2db0c51.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fbe43e0f76c335a9e235ae735e2db0c51.png%3Fs%3D%26d%3Dmp&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fbe43e0f76c335a9e235ae735e2db0c51.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">technokon</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">5 years ago</div>\n</div>\n</div>\n<div class=\"flex items-center space-x-2\">&nbsp;</div>\n</li>\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">How will you use what you learned from this course?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>Nice usage JS for CSS but little chaotic for me and would be better great with more examples :)</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fa287e1f3bd840f6405cfe5cfa3bfbad1.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fa287e1f3bd840f6405cfe5cfa3bfbad1.png%3Fs%3D%26d%3Dmp&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fa287e1f3bd840f6405cfe5cfa3bfbad1.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">Kamil L</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">5 years ago</div>\n</div>\n</div>\n<div class=\"flex items-center space-x-2\">&nbsp;</div>\n</li>\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">What would make this course a 7 for you?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>Maybe the prononciation could be better, and the speed of explanations could be a little bit slower.</p>\n<p>But I liked it very much, thanks !</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F1f9245c1a4b54c6ff8062f06c216587a.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F1f9245c1a4b54c6ff8062f06c216587a.png%3Fs%3D%26d%3Dmp&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F1f9245c1a4b54c6ff8062f06c216587a.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">Erica</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">5 years ago</div>\n</div>\n</div>\n<div class=\"flex items-center space-x-2\">&nbsp;</div>\n</li>\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">What did you like about this course?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>Very crisp ans straight to the point. I was struggling to understand need for CSS Loaders in any project.This tiny powerful course resolved my queries.</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fd2eip9sf3oo6c2.cloudfront.net%2Fusers%2Favatars%2F000%2F355%2F721%2Fmedium%2Fprofile_pic_small.jpg&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fd2eip9sf3oo6c2.cloudfront.net%2Fusers%2Favatars%2F000%2F355%2F721%2Fmedium%2Fprofile_pic_small.jpg&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fd2eip9sf3oo6c2.cloudfront.net%2Fusers%2Favatars%2F000%2F355%2F721%2Fmedium%2Fprofile_pic_small.jpg&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">Varun Goel</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">6 years ago</div>\n</div>\n</div>\n<div class=\"flex items-center space-x-2\">&nbsp;</div>\n</li>\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">How will you use what you learned from this course?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>Thanks for this course, Oleg. The pace of the course was perfect since I already know Javascript. But I feel like it would be good to have a 'where to go next' video at the end. We currently use a SASS/BEM solution to create a monolithic global CSS file for a React/Redux app and would like some guidance on how to go about converting to a CSS-in-JS approach with some hints on the pros and cons of this approach.</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fb3dbd1e5646886d6c52b220b6c6561f6.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fb3dbd1e5646886d6c52b220b6c6561f6.png%3Fs%3D%26d%3Dmp&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2Fb3dbd1e5646886d6c52b220b6c6561f6.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">Jamie</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">6 years ago</div>\n</div>\n</div>\n<div class=\"flex items-center space-x-2\">&nbsp;</div>\n</li>\n<li class=\"space-y-2 dark:border-gray-800 border rounded-md p-4 undefined\">\n<div class=\"flex items-center leading-tight\">\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n<div>&nbsp;</div>\n</div>\n<div class=\"text-sm text-gray-600 dark:text-blue-100 opacity-80\">What did you like about this course?</div>\n<div class=\"prose dark:prose-dark dark:prose-a:text-blue-300 prose-a:text-blue-500 overflow-hidden\">\n<p>Great stuff. And great form of each course whose each lesson starts with 'We have two buttons'... All in all, very useful stuff. Thank you!</p>\n</div>\n<div class=\" flex items-center space-x-2\">\n<div class=\"flex items-center justify-center\"><img src=\"data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%2732%27%20height=%2732%27/%3e\" alt=\"\" aria-hidden=\"true\"><img class=\"rounded-full\" src=\"https://egghead.io/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F6f7f3e05eb5fe53dcd8c3a879d070e7a.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75\" srcset=\"/_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F6f7f3e05eb5fe53dcd8c3a879d070e7a.png%3Fs%3D%26d%3Dmp&amp;w=32&amp;q=75 1x, /_next/image?url=https%3A%2F%2Fgravatar.com%2Favatar%2F6f7f3e05eb5fe53dcd8c3a879d070e7a.png%3Fs%3D%26d%3Dmp&amp;w=64&amp;q=75 2x\" data-nimg=\"intrinsic\"></div>\n<div class=\"flex items-baseline\">\n<div class=\"font-bold\">Artificial Labs</div>\n<div class=\"text-xs text-gray-500 dark:text-gray-400 pl-2\">6 years ago</div>\n</div>\n</div>\n</li>\n</ul>\n</div>",
+      "isArchived": false,
+      "shareLink": null,
+      "tax": 0,
+      "billTo": null,
+      "shipTo": null,
+      "termsAndConditions": null,
+      "currency": "USD",
+      "isTemplate": false,
+      "shareRole": null
+    }
+  ],
+  "File": []
 }

@@ -572,8 +572,20 @@ video {
   margin-bottom: 0px;
 }
 
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
 .mb-1cm {
   margin-bottom: 1cm;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .ml-1cm {
@@ -590,6 +602,18 @@ video {
 
 .mt-1cm {
   margin-top: 1cm;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-\[7mm\] {
+  margin-bottom: 7mm;
 }
 
 .block {
@@ -644,6 +668,10 @@ video {
   width: 66.666667%;
 }
 
+.w-\[18cm\] {
+  width: 18cm;
+}
+
 .w-\[1px\] {
   width: 1px;
 }
@@ -655,6 +683,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/3 {
+  width: 33.333333%;
+}
+
+.w-1\/5 {
+  width: 20%;
 }
 
 .min-w-5 {
@@ -694,10 +730,6 @@ video {
   gap: 0.5rem;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -734,10 +766,6 @@ video {
   border-bottom-width: 1px;
 }
 
-.border-l {
-  border-left-width: 1px;
-}
-
 .border-solid {
   border-style: solid;
 }
@@ -750,6 +778,11 @@ video {
 .border-b-neutral-gray-120 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(224 224 224 / var(--tw-border-opacity));
+}
+
+.border-b-neutral-gray-80 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(235 235 235 / var(--tw-border-opacity));
 }
 
 .bg-neutral-gray-opacity-120 {
@@ -771,6 +804,11 @@ video {
   padding-bottom: 1mm;
 }
 
+.py-\[2mm\] {
+  padding-top: 2mm;
+  padding-bottom: 2mm;
+}
+
 .text-left {
   text-align: left;
 }
@@ -784,8 +822,8 @@ video {
 }
 
 .text-m {
-  font-size: 14pt;
-  line-height: 20pt;
+  font-size: 5mm;
+  line-height: 7mm;
 }
 
 .text-p-l {
@@ -813,14 +851,14 @@ video {
   line-height: 2.5mm;
 }
 
-.text-s {
-  font-size: 12pt;
-  line-height: 16pt;
+.text-xs {
+  font-size: 3.15mm;
+  line-height: 4.41mm;
 }
 
 .text-xxs {
-  font-size: 6pt;
-  line-height: 9pt;
+  font-size: 2.1mm;
+  line-height: 2.94mm;
 }
 
 .font-bold {
@@ -873,6 +911,11 @@ video {
   color: $1F1F1F;
 }
 
+.text-neutral-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgb(153 153 153 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -909,7 +952,7 @@ video {
   @bottom-right {
     content: counter(page) ' / ' counter(pages);
 
-    font-size: 8pt;
+    font-size: 3mm;
   }
 }
 
@@ -925,17 +968,16 @@ video {
   }
 
   h1 {
-    font-size: 40pt;
-    line-height: 48.41pt;
+    font-size: 14mm;
+    line-height: 20mm;
     font-weight: 500;
     color: var(--primary-basic-gray);
   }
 
   h2 {
-    font-size: 20pt;
+    font-size: 7mm;
     font-weight: 700;
-    line-height: 24pt;
-    letter-spacing: -0.04em;
+    line-height: 10mm;
     color: var(--primary-basic-gray);
   }
 
@@ -948,18 +990,9 @@ video {
   }
 
   p {
-    font-size: 12pt;
-    line-height: 16pt;
-    letter-spacing: -1%;
+    font-size: calc(16 / 6) mm;
+    line-height: calc(20 / 6) mm;
     color: var(--primary-basic-gray);
-  }
-
-  .ant-modal-mask {
-    display: none;
-  }
-
-  .ant-modal-content {
-    display: none;
   }
 
   .tox-comment {
@@ -967,9 +1000,9 @@ video {
   }
 
   blockquote {
-    padding-left: 1rem !important;
-    margin-left: -1rem !important;
-    border-left: solid 4px var(--primary-basic-gray);
+    padding-left: 5mm !important;
+    margin-left: -5mm !important;
+    border-left: solid 1mm var(--primary-basic-gray);
   }
 
   ul {
@@ -981,6 +1014,10 @@ video {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
+    font-size: 5mm;
+    line-height: 7mm;
+    letter-spacing: -1%;
+    color: var(--primary-basic-gray);
   }
 
   ol {
@@ -992,6 +1029,10 @@ video {
     margin-inline-end: 0px;
     padding-inline-start: 40px;
     unicode-bidi: isolate;
+    font-size: 5mm;
+    line-height: 7mm;
+    letter-spacing: -1%;
+    color: var(--primary-basic-gray);
   }
 
   .toc-page-link-print::after {
@@ -1113,9 +1154,9 @@ body {
   justify-content: space-between;
   text-decoration: none;
   gap: 8px;
-  font-size: 14pt;
+  font-size: 5mm;
   font-weight: 500;
-  line-height: 20pt;
+  line-height: 7mm;
   letter-spacing: -0.01em;
   color: var(--primary-basic-gray);
   width: 100vw;

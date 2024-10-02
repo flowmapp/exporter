@@ -1,31 +1,33 @@
 import React from 'react'
 import PrintChapterContainer from 'src/common/PrintChapterContainer'
-import { SitemapExportData, SitemapPageTreeItem, SitemapPageType } from './generalTypes'
+import { SitemapPageTreeItem, SitemapPageType } from './generalTypes'
 import { Label } from 'src/common/Label/Label'
 import cn from 'classnames'
 import { useSiteMapStructuredPages } from './useSiteMapStructuredPages'
 import { getPageChaptersToPrint } from './SitemapPages/SitemapPages'
+import { usePrintContext } from './PrintContext'
 
-type Props = { sitemap: SitemapExportData }
+const StructurePage: React.FC = () => {
+  const { options } = usePrintContext()
+  if (!options.includes('structure')) return null
 
-const StructurePage: React.FC<Props> = ({ sitemap }) => {
   return (
     <PrintChapterContainer>
       <h2>Structure</h2>
-      <Structure sitemap={sitemap} />
+      <Structure />
     </PrintChapterContainer>
   )
 }
 
 export default StructurePage
 
-const Structure: React.FC<Props> = ({ sitemap }) => {
-  const structure = useSiteMapStructuredPages(sitemap.sitemapPages)
+const Structure: React.FC = () => {
+  const structure = useSiteMapStructuredPages()
 
   return (
     <div>
       {structure.rootPage && <PageTree page={structure.rootPage} />}
-      {structure.headerPages && (
+      {structure.headerPages.length > 0 && (
         <div>
           <div className="test-s font-semibold text-gray-560 h-9 border-b-neutral-gray-120 mt-1cm border-b border-solid">
             Separate Pages
@@ -35,7 +37,7 @@ const Structure: React.FC<Props> = ({ sitemap }) => {
           ))}
         </div>
       )}
-      {structure.footerPages && (
+      {structure.footerPages.length > 0 && (
         <div>
           <div className="test-s font-semibold text-gray-560 h-9 border-b-neutral-gray-120 mt-1cm border-b border-solid">
             Footer Pages
@@ -78,17 +80,16 @@ const PageItem: React.FC<{ page: SitemapPageTreeItem; level: number }> = ({ page
 
 const StructureItem: React.FC<{ page: SitemapPageType; level: number }> = ({ page, level }) => {
   const { summary } = getPageChaptersToPrint(page)
+  const { options } = usePrintContext()
+  const printEmptyPages = options.includes('include empty pages')
 
-  const Tag = summary ? 'a' : 'span'
+  const Tag = summary || printEmptyPages ? 'a' : 'span'
+  const tagClassName = summary || printEmptyPages ? 'toc-page-link-print' : 'toc-page-link-no-print'
 
   return (
     <span className="flex flex-nowrap items-center gap-2 text-m font-medium leading-[20pt] text-gray] h-9">
       <Tag
-        className={cn(
-          'text-gray no-underline toc-page-link',
-          `toc-page-link-${level}`,
-          summary ? 'toc-page-link-print' : 'toc-page-link-no-print',
-        )}
+        className={cn('text-gray no-underline toc-page-link', `toc-page-link-${level}`, tagClassName)}
         href={`#page/${page.id}`}
       >
         <span className="flex items-center">

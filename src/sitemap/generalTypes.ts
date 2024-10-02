@@ -1,4 +1,4 @@
-import { Estimate } from './estimateTypes'
+import { Estimate, SitemapPageEstimate } from './estimateTypes'
 
 export type SitemapPdfExportOptions =
   | 'project info'
@@ -12,12 +12,29 @@ export type SitemapPdfExportOptions =
   | 'estimates'
   | 'invoice'
 
+export type SitemapExportWithProjectData = {
+  Sitemap: { title: string }[]
+  SitemapPage: SitemapPageType[]
+  SitemapPageBlock: SitemapPageBlockType[]
+  WireframePrimitive: Primitive[]
+  WireframePrimitiveFile: FileData[]
+  SitemapPageLabel: { labelId: string; sitemapPageId: string }[]
+  Label: LabelType[]
+  Estimate: Estimate[]
+  SitemapPageEstimate: SitemapPageEstimate[]
+  Project: { title: string; description: string; currency: string }[]
+}
+
+type SitemapPageEstimate = { amount: number; sitemapPageId: string; estimateId: string }
+
 export type SitemapExportData = {
-  id: string
-  projectId: string
   title: string
+  projectTitle: string
+  projectDescription: string
   tax: number
+  currency: string
   estimates: Estimate[]
+  sitemapPageEstimates: SitemapPageEstimate[]
   sitemapLines: SitemapLineType[]
   sitemapPages: SitemapPageType[]
 }
@@ -51,9 +68,6 @@ export type SitemapPageType = {
   isPreviewShared: boolean
   title: string
   projectId: string
-  contentSystem: {
-    id: string
-  }
   labels: LabelType[]
   cover: string | null
   sitemapPageId?: string
@@ -63,6 +77,7 @@ export type SitemapPageType = {
   seoDescription?: string | null
   seoSlug?: string | null
   file: SitemapPageFile | null
+  estimates: SitemapPageEstimate[]
 }
 
 export type SitemapPageTreeItem = SitemapPageType & {
@@ -77,14 +92,6 @@ export type LabelType = {
   id: string
   color: string
   title: string
-  sortIndex: string
-  projectId: string | null
-  workspaceId: string
-  SitemapPageLabel?: SitemapPageLabelType
-}
-
-export type SitemapPageLabelType = {
-  id: string
 }
 
 export type LabelValue = LabelType & {

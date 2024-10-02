@@ -2,15 +2,9 @@ import fs from 'fs'
 // @ts-ignore
 import compressor from 'primitive-compressor'
 import { exportSitemap } from './sitemap'
-import sitemap from './sitemap/mock.json'
+import data from './sitemap/mock.json'
 
-sitemap.sitemapPages = sitemap.sitemapPages.map((page) => ({
-  ...page,
-  blocks: page.blocks.map((b) => ({
-    ...b,
-    wireframePrimitives: b.wireframePrimitives.map(compressor.decompressWireframePrimitive),
-  })),
-}))
+data.WireframePrimitive = data.WireframePrimitive.map(compressor.decompressWireframePrimitive)
 
 const { ENTITY, FORMAT } = process.env
 
@@ -33,7 +27,7 @@ const dataToFile = (html) => {
 
 switch (process.env.ENTITY) {
   case 'sitemap': {
-    exportSitemap(sitemap, { format: FORMAT }).then(dataToFile)
+    exportSitemap(data, { format: FORMAT }).then(dataToFile)
     break
   }
   default: {
