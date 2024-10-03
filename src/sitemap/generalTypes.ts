@@ -1,16 +1,16 @@
 import { Estimate, SitemapPageEstimate } from './estimateTypes'
 
-export type SitemapPdfExportOptions =
-  | 'project info'
-  | 'structure'
-  | 'pages'
-  | 'wireframes'
-  | 'block descriptions'
-  | 'page descriptions'
-  | 'include empty pages'
-  | 'page seo'
-  | 'estimates'
-  | 'invoice'
+export type SitemapPdfExportBackendOptions = {
+  projectInfo: boolean
+  structure: boolean
+  pages: boolean
+  wireframes: boolean
+  pageDescriptions: boolean
+  content: boolean
+  seo: boolean
+  includeEmptyPages: boolean
+  estimates: boolean
+}
 
 export type SitemapExportWithProjectData = {
   Sitemap: { title: string }[]
@@ -149,6 +149,8 @@ export type SitemapPageBlockType = {
   backgroundOpacity?: number
   pinTo?: PinPosition | null
 }
+
+type PinPosition = 'top' | 'bottom'
 
 export type FontSize = 'xs' | 's' | 'm' | 'l' | 'xl'
 type TextAlign = 'left' | 'center' | 'right'

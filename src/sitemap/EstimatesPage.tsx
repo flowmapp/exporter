@@ -5,7 +5,7 @@ import { usePrintContext } from './PrintContext'
 
 const EstimatesPage: React.FC = () => {
   const { sitemap, options } = usePrintContext()
-  if (!options.includes('estimates')) return null
+  if (!options.estimates) return null
 
   const estimates = sitemap.estimates.sort(compareIndex)
   const sitemapPagesEstimates = sitemap.sitemapPageEstimates

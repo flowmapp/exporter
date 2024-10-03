@@ -1,7 +1,7 @@
 import { createContext, PropsWithChildren, useContext } from 'react'
-import { SitemapExportData, SitemapPdfExportOptions } from './generalTypes'
+import { SitemapExportData, SitemapPdfExportBackendOptions } from './generalTypes'
 
-type PrintContextData = { sitemap: SitemapExportData; options: SitemapPdfExportOptions[] }
+type PrintContextData = { sitemap: SitemapExportData; options: SitemapPdfExportBackendOptions }
 
 const PrintContext = createContext<PrintContextData>({})
 

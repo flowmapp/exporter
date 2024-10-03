@@ -11,7 +11,7 @@ import { usePrintContext } from '../PrintContext'
 const SitemapPages: React.FC = () => {
   const structure = useSiteMapStructuredPages()
   const { options } = usePrintContext()
-  if (!options.includes('pages')) return null
+  if (!options.pages) return null
 
   const { rootPage, headerPages, footerPages } = structure
 
@@ -66,11 +66,11 @@ const SitemapPage: React.FC<{
   pinnedToBottomBlocks?: SitemapPageBlockType[]
 }> = ({ page, pinnedToTopBlocks = [], pinnedToBottomBlocks = [] }) => {
   const { options } = usePrintContext()
-  const printWireframes = options.includes('wireframes')
-  const printBlockDescriptions = options.includes('block descriptions')
-  const printDescriptions = options.includes('page descriptions')
-  const printSeo = options.includes('page seo')
-  const printEmptyPages = options.includes('include empty pages')
+  const printWireframes = options.wireframes
+  const printBlockDescriptions = options.content
+  const printDescriptions = options.pageDescriptions
+  const printSeo = options.seo
+  const printEmptyPages = options.includeEmptyPages
 
   if (!getPageChaptersToPrint(page).summary) {
     if (printEmptyPages)

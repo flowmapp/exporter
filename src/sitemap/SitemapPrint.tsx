@@ -1,5 +1,5 @@
 import { renderToString } from 'react-dom/server'
-import { SitemapExportData, SitemapExportWithProjectData, SitemapPdfExportOptions } from './generalTypes'
+import { SitemapExportData, SitemapExportWithProjectData, SitemapPdfExportBackendOptions } from './generalTypes'
 import HtmlPdfWrapper from './HtmlPdfWrapper'
 import fs from 'fs'
 import { execSync } from 'child_process'
@@ -10,7 +10,13 @@ import ProjectInfo from './ProjectInfo'
 import EstimatesPage from './EstimatesPage'
 import { PrintContextProvider } from './PrintContext'
 
-const SitemapPrint = ({ sitemap, options }: { sitemap: SitemapExportData; options: SitemapPdfExportOptions[] }) => {
+const SitemapPrint = ({
+  sitemap,
+  options,
+}: {
+  sitemap: SitemapExportData
+  options: SitemapPdfExportBackendOptions
+}) => {
   return (
     <HtmlPdfWrapper>
       <PrintContextProvider sitemap={sitemap} options={options}>
@@ -24,20 +30,22 @@ const SitemapPrint = ({ sitemap, options }: { sitemap: SitemapExportData; option
   )
 }
 
-const defaultOptions: SitemapPdfExportOptions[] = [
-  'project info',
-  'structure',
-  'pages',
-  'wireframes',
-  'block descriptions',
-  'page descriptions',
-  'include empty pages',
-  'page seo',
-  'estimates',
-  'invoice',
-]
+const defaultOptions: SitemapPdfExportBackendOptions = {
+  projectInfo: true,
+  structure: true,
+  pages: true,
+  wireframes: true,
+  pageDescriptions: true,
+  content: true,
+  seo: true,
+  includeEmptyPages: true,
+  estimates: true,
+}
 
-export default async (sitemap: SitemapExportWithProjectData, options: SitemapPdfExportOptions[] = defaultOptions) => {
+export default async (
+  sitemap: SitemapExportWithProjectData,
+  options: SitemapPdfExportBackendOptions = defaultOptions,
+) => {
   const cwd = process.cwd()
   const html = renderToString(<SitemapPrint sitemap={convertExportData(sitemap)} options={options} />)
   const fileName = Date.now() + Math.random().toString(36).substring(7)

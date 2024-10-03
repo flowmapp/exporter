@@ -9,7 +9,7 @@ import { usePrintContext } from './PrintContext'
 
 const StructurePage: React.FC = () => {
   const { options } = usePrintContext()
-  if (!options.includes('structure')) return null
+  if (!options.structure) return null
 
   return (
     <PrintChapterContainer>
@@ -81,7 +81,7 @@ const PageItem: React.FC<{ page: SitemapPageTreeItem; level: number }> = ({ page
 const StructureItem: React.FC<{ page: SitemapPageType; level: number }> = ({ page, level }) => {
   const { summary } = getPageChaptersToPrint(page)
   const { options } = usePrintContext()
-  const printEmptyPages = options.includes('include empty pages')
+  const printEmptyPages = options.includeEmptyPages
 
   const Tag = summary || printEmptyPages ? 'a' : 'span'
   const tagClassName = summary || printEmptyPages ? 'toc-page-link-print' : 'toc-page-link-no-print'
