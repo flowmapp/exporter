@@ -2,6 +2,7 @@ import { renderToString } from 'react-dom/server'
 import { SitemapExportData, SitemapExportWithProjectData, SitemapPdfExportBackendOptions } from './generalTypes'
 import HtmlPdfWrapper from './HtmlPdfWrapper'
 import fs from 'fs'
+import path from 'path'
 import { execSync } from 'child_process'
 import TitlePage from './TitlePage'
 import StructurePage from './StructurePage'
@@ -46,16 +47,15 @@ export default async (
   sitemap: SitemapExportWithProjectData,
   options: SitemapPdfExportBackendOptions = defaultOptions,
 ) => {
-  const cwd = process.cwd()
+  const cwd = path.resolve(__dirname, '..')
   const html = renderToString(<SitemapPrint sitemap={convertExportData(sitemap)} options={options} />)
   const fileName = Date.now() + Math.random().toString(36).substring(7)
-  fs.writeFileSync(`${fileName}.html`, html)
+  fs.writeFileSync(`${cwd}/${fileName}.html`, html)
   execSync(`cp ${cwd}/src/tw.css ${cwd}`)
-  execSync(`cp ${cwd}/src/tw.css ${cwd}`)
-  execSync(`vivliostyle build test.html -o ${fileName}.pdf`)
-  const pdf = fs.readFileSync(`${fileName}.pdf`)
-  execSync(`rm ${fileName}.html`)
-  execSync(`rm ${fileName}.pdf`)
+  execSync(`vivliostyle build ${cwd}/${fileName}.html -o ${cwd}/${fileName}.pdf`)
+  const pdf = fs.createReadStream(`${cwd}/${fileName}.pdf`)
+  execSync(`rm ${cwd}/${fileName}.html`)
+  // execSync(`rm ${cwd}/${fileName}.pdf`)
 
   return pdf
 }

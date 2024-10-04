@@ -27,7 +27,7 @@ const dataToFile = (html) => {
 
 switch (process.env.ENTITY) {
   case 'sitemap': {
-    exportSitemap(data, { format: FORMAT }).then(dataToFile)
+    exportSitemap(data, { format: FORMAT }).then(toFile)
     break
   }
   default: {
