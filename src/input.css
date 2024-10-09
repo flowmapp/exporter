@@ -34,6 +34,11 @@
 }
 
 @media print {
+  img,
+  td {
+    max-width: 18cm;
+  }
+
   .page {
     page-break-before: always;
   }

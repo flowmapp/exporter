@@ -7,7 +7,11 @@ export const exportSitemap = (sitemap, { options, format } = {}) => {
 
   switch (format) {
     case 'pdf': {
-      return pdf(sitemap, options)
+      try {
+        return pdf(sitemap, options)
+      } catch (err) {
+        console.error('cant export pdf', err)
+      }
     }
     default: {
       throw new Error(`Unknown sitemap export format ${format}`)

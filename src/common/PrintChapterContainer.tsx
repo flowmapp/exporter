@@ -16,7 +16,7 @@ const PrintChapterContainer: React.FC<PropsWithChildren<Props>> = ({ title, foot
         </thead>
         <tbody>
           <tr>
-            <td>{children}</td>
+            <td className="w-[18cm]">{children}</td>
           </tr>
         </tbody>
         <tfoot>

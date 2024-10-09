@@ -3,7 +3,7 @@ import { SitemapExportData, SitemapExportWithProjectData, SitemapPdfExportBacken
 import HtmlPdfWrapper from './HtmlPdfWrapper'
 import fs from 'fs'
 import path from 'path'
-import { execSync } from 'child_process'
+import { exec } from 'child_process'
 import TitlePage from './TitlePage'
 import StructurePage from './StructurePage'
 import SitemapPages from './SitemapPages/SitemapPages'
@@ -43,19 +43,47 @@ const defaultOptions: SitemapPdfExportBackendOptions = {
   estimates: true,
 }
 
+const writeFile = (fileName: string, content: string) => {
+  return new Promise((resolve, reject) => {
+    fs.writeFile(fileName, content, (err) => {
+      if (err) {
+        reject(err)
+      }
+      resolve(void 0)
+    })
+  })
+}
+
+const execPromise = (command: string) => {
+  return new Promise((resolve, reject) => {
+    exec(command, (err, stdout) => {
+      if (err) {
+        reject(err)
+      }
+      resolve(stdout)
+    })
+  })
+}
+
 export default async (
   sitemap: SitemapExportWithProjectData,
   options: SitemapPdfExportBackendOptions = defaultOptions,
 ) => {
-  const cwd = path.resolve(__dirname, '..')
+  const cwd = process.env.CWD ?? path.resolve(__dirname, '..')
   const html = renderToString(<SitemapPrint sitemap={convertExportData(sitemap)} options={options} />)
   const fileName = Date.now() + Math.random().toString(36).substring(7)
-  fs.writeFileSync(`${cwd}/${fileName}.html`, html)
-  execSync(`cp ${cwd}/src/tw.css ${cwd}`)
-  execSync(`vivliostyle build ${cwd}/${fileName}.html -o ${cwd}/${fileName}.pdf`)
+  await writeFile(`${cwd}/${fileName}.html`, html)
+  await execPromise(`cp ${cwd}/src/tw.css ${cwd}`)
+  await execPromise(`vivliostyle build ${cwd}/${fileName}.html -o ${cwd}/${fileName}.pdf`)
   const pdf = fs.createReadStream(`${cwd}/${fileName}.pdf`)
-  execSync(`rm ${cwd}/${fileName}.html`)
-  // execSync(`rm ${cwd}/${fileName}.pdf`)
+  fs.unlink(`${cwd}/${fileName}.html`, (err) => {
+    if (err) console.log('cant remove file: ', `${cwd}/${fileName}.html`, err)
+  })
+  setTimeout(() => {
+    fs.unlink(`${cwd}/${fileName}.pdf`, (err) => {
+      if (err) console.log('cant remove file: ', `${cwd}/${fileName}.pdf`, err)
+    })
+  }, 60000)
 
   return pdf
 }
