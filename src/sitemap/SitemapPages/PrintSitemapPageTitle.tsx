@@ -23,7 +23,7 @@ const PrintSitemapPageTitle: React.FC<{
         gap: '8px',
       }}
     >
-      <Dollar20Icon size={20} />
+      <Dollar20Icon size={16} />
       <SitemapPageEstimateLabel estimates={page.estimates} />
     </div>,
     hasLabels && (
@@ -37,10 +37,10 @@ const PrintSitemapPageTitle: React.FC<{
       </div>
     ),
     page.pageLink && (
-      <div className="flex flex-nowrap items-center gap-2">
+      <div className="flex flex-nowrap items-center gap-2 w-full overflow-hidden text-ellipsis">
         <LinkurlIcon />
-        <a href={page.pageLink} className="text-gray-560 no-underline">
-          {page.pageLink}
+        <a href={page.pageLink} className="text-gray-560 no-underline text-nowrap">
+          {formatPageLink(page.pageLink)}
         </a>
       </div>
     ),
@@ -105,4 +105,10 @@ function formatCurrency(currency: string, value?: string | number): string {
 
 const formatEstimateHours = (value: string) => {
   return `${value}h`
+}
+
+function formatPageLink(pageLink: string) {
+  if (pageLink.length <= 50) return pageLink
+
+  return pageLink.slice(0, 50) + '...'
 }
