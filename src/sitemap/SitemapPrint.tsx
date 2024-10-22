@@ -79,11 +79,11 @@ export default async (
   // fs.unlink(`${cwd}/${fileName}.html`, (err) => {
   //   if (err) console.log('cant remove file: ', `${cwd}/${fileName}.html`, err)
   // })
-  setTimeout(() => {
-    fs.unlink(`${cwd}/${fileName}.pdf`, (err) => {
-      if (err) console.log('cant remove file: ', `${cwd}/${fileName}.pdf`, err)
-    })
-  }, 60000)
+  // setTimeout(() => {
+  //   fs.unlink(`${cwd}/${fileName}.pdf`, (err) => {
+  //     if (err) console.log('cant remove file: ', `${cwd}/${fileName}.pdf`, err)
+  //   })
+  // }, 60000)
 
   return pdf
 }
