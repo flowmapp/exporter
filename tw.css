@@ -746,6 +746,10 @@ video {
   white-space: pre-wrap;
 }
 
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
 .break-words {
   overflow-wrap: break-word;
 }
@@ -987,9 +991,9 @@ video {
   }
 
   h3 {
-    font-size: 18pt;
+    font-size: 3mm;
     font-weight: 700;
-    line-height: 20pt;
+    line-height: 3.33mm;
     letter-spacing: -0.02em;
     color: var(--primary-basic-gray);
   }
@@ -1007,6 +1011,8 @@ video {
   blockquote {
     padding-left: 5mm !important;
     margin-left: -5mm !important;
+    margin-top: 5mm !important;
+    margin-bottom: 5mm !important;
     border-left: solid 1mm var(--primary-basic-gray);
   }
 

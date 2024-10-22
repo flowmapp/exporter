@@ -69,7 +69,7 @@ const PageItem: React.FC<{ page: SitemapPageTreeItem; level: number }> = ({ page
         <div>
           {page.children.map((child) => (
             <div key={child.id}>
-              <PageItem page={child} level={++level} />
+              <PageItem page={child} level={level + 1} />
             </div>
           ))}
         </div>
