@@ -1,4 +1,5 @@
 import pdf from './SitemapPrint.js'
+import compressor from 'primitive-compressor'
 
 export const exportSitemap = (sitemap, { options, format } = {}) => {
   if (!sitemap) {
@@ -8,6 +9,7 @@ export const exportSitemap = (sitemap, { options, format } = {}) => {
   switch (format) {
     case 'pdf': {
       try {
+        sitemap.WireframePrimitive = sitemap.WireframePrimitive.map(compressor.decompressWireframePrimitive)
         return pdf(sitemap, options)
       } catch (err) {
         console.error('cant export pdf', err)
