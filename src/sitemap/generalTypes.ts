@@ -17,12 +17,13 @@ export type SitemapExportWithProjectData = {
   SitemapPage: SitemapPageType[]
   SitemapPageBlock: SitemapPageBlockType[]
   WireframePrimitive: Primitive[]
-  WireframePrimitiveFile: FileData[]
   SitemapPageLabel: { labelId: string; sitemapPageId: string }[]
   Label: LabelType[]
   Estimate: Estimate[]
   SitemapPageEstimate: SitemapPageEstimate[]
   Project: { title: string; description: string; currency: string }[]
+  File: FileData[]
+  WireframePrimitiveFile: { wireframePrimitiveId: string; fileId: string }[]
 }
 
 type SitemapPageEstimate = { amount: number; sitemapPageId: string; estimateId: string }
@@ -180,12 +181,7 @@ export type ImageAliases = {
 
 export type FileData = {
   aliases?: ImageAliases
-  WireframePrimitiveFile?: { id: string }
-  entity?: string
   id?: string
-  originalName?: string
-  path?: string
-  userId?: string
 }
 
 type PrimitiveCommon = {
@@ -237,6 +233,7 @@ export type PrimitiveImage = PrimitiveCommon & {
   params: {
     opacity: number
     sitemapPageId?: string
+    src?: string
   }
 }
 

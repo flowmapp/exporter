@@ -10,9 +10,9 @@ const ProjectInfo: React.FC = () => {
 
   return (
     <PrintChapterContainer>
-      <div>
+      <div className="html-content">
         <h2 className="mb-4">Project Info</h2>
-        <p dangerouslySetInnerHTML={{ __html: sitemap.projectDescription }}></p>
+        <p dangerouslySetInnerHTML={{ __html: sitemap.projectDescription }} />
       </div>
     </PrintChapterContainer>
   )

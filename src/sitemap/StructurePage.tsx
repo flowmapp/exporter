@@ -92,8 +92,8 @@ const StructureItem: React.FC<{ page: SitemapPageType; level: number }> = ({ pag
         className={cn('text-gray no-underline toc-page-link', `toc-page-link-${level}`, tagClassName)}
         href={`#page/${page.id}`}
       >
-        <span className="flex items-center">
-          {page.title}
+        <span className="flex items-center w-full" style={{ width: 'calc(100% - 1cm)' }}>
+          <span className="block overflow-hidden text-ellipsis whitespace-nowrap">{page.title}</span>
           <div className="ml-2 flex gap-2">
             {page.labels?.map((label) => (
               <Label key={label.id} color={label.color}>

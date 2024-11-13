@@ -1,5 +1,11 @@
 import { renderToString } from 'react-dom/server'
-import { SitemapExportData, SitemapExportWithProjectData, SitemapPdfExportBackendOptions } from './generalTypes'
+import {
+  isPrimitiveImage,
+  Primitive,
+  SitemapExportData,
+  SitemapExportWithProjectData,
+  SitemapPdfExportBackendOptions,
+} from './generalTypes'
 import HtmlPdfWrapper from './HtmlPdfWrapper'
 import fs from 'fs'
 import path from 'path'
@@ -101,7 +107,9 @@ function convertExportData(data: SitemapExportWithProjectData): SitemapExportDat
       ...page,
       blocks: data.SitemapPageBlock.filter((block) => block.sitemapPageId === page.id).map((block) => ({
         ...block,
-        wireframePrimitives: data.WireframePrimitive.filter((primitive) => primitive.sitemapPageBlockId === block.id),
+        wireframePrimitives: data.WireframePrimitive.filter(
+          (primitive) => primitive.sitemapPageBlockId === block.id,
+        ).map((p) => fillFilesToPrimitive(p, data)),
       })),
       labels: data.SitemapPageLabel.filter((label) => label.sitemapPageId === page.id)
         .map((label) => data.Label.find((l) => l.id === label.labelId))
@@ -112,4 +120,21 @@ function convertExportData(data: SitemapExportWithProjectData): SitemapExportDat
       })),
     })),
   }
+}
+
+function fillFilesToPrimitive(primitive: Primitive, data: SitemapExportWithProjectData): Primitive {
+  if (!isPrimitiveImage(primitive)) return primitive
+
+  const file = data.WireframePrimitiveFile.find((f) => f.wireframePrimitiveId === primitive.id)
+  if (!file) return primitive
+
+  const fileData = data.File.find((f) => f.id === file.fileId)
+  if (!fileData) return primitive
+  const { aliases } = fileData
+  const src = aliases?.original ?? aliases?.lg ?? aliases?.xl ?? aliases?.sm
+  return {
+    ...primitive,
+    params: { ...primitive.params, src },
+  }
+  return primitive
 }

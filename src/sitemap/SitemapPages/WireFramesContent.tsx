@@ -416,9 +416,7 @@ function getStylesImage(params: PrimitiveImage['params']): CSSProperties {
 }
 
 const getImage = (primitive: PrimitiveImage): string | null | undefined => {
-  if (!primitive.files?.length) return null
-
-  return primitive.files[0]?.aliases?.original
+  return primitive.params.src
 }
 
 const ImagePrimitive: React.FC<{ primitive: PrimitiveImage }> = ({ primitive }) => {

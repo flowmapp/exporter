@@ -33,6 +33,40 @@
   }
 }
 
+h1 {
+  font-size: 14mm;
+  line-height: 20mm;
+  font-weight: 500;
+  color: var(--primary-basic-gray);
+}
+
+h2 {
+  font-size: 7mm;
+  font-weight: 700;
+  line-height: 10mm;
+  color: var(--primary-basic-gray);
+}
+
+h3 {
+  font-size: 3mm;
+  font-weight: 700;
+  line-height: 3.33mm;
+  letter-spacing: -0.02em;
+  color: var(--primary-basic-gray);
+}
+
+p {
+  font-size: calc(16mm / 6);
+  line-height: calc(20mm / 6);
+  color: var(--primary-basic-gray);
+}
+
+.html-content {
+  font-size: calc(16mm / 6) !important;
+  line-height: calc(20mm / 6) !important;
+  color: var(--primary-basic-gray);
+}
+
 @media print {
   img,
   td {
@@ -43,41 +77,12 @@
     page-break-before: always;
   }
 
-  h1 {
-    font-size: 14mm;
-    line-height: 20mm;
-    font-weight: 500;
-    color: var(--primary-basic-gray);
-  }
-
-  h2 {
-    font-size: 7mm;
-    font-weight: 700;
-    line-height: 10mm;
-    color: var(--primary-basic-gray);
-  }
-
-  h3 {
-    font-size: 3mm;
-    font-weight: 700;
-    line-height: 3.33mm;
-    letter-spacing: -0.02em;
-    color: var(--primary-basic-gray);
-  }
-
-  p {
-    font-size: calc(16 / 6) mm;
-    line-height: calc(20 / 6) mm;
-    color: var(--primary-basic-gray);
-  }
-
   .tox-comment {
     background-color: unset !important;
   }
 
   blockquote {
     padding-left: 5mm !important;
-    margin-left: -5mm !important;
     margin-top: 5mm !important;
     margin-bottom: 5mm !important;
     border-left: solid 1mm var(--primary-basic-gray);
@@ -90,11 +95,11 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: calc(40mm / 6);
     unicode-bidi: isolate;
 
-    font-size: 5mm;
-    line-height: 7mm;
+    font-size: calc(16mm / 6);
+    line-height: calc(20mm / 6);
     letter-spacing: -1%;
     color: var(--primary-basic-gray);
   }
@@ -106,11 +111,11 @@
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    padding-inline-start: calc(40mm / 6);
     unicode-bidi: isolate;
 
-    font-size: 5mm;
-    line-height: 7mm;
+    font-size: calc(16mm / 6);
+    line-height: calc(20mm / 6);
     letter-spacing: -1%;
     color: var(--primary-basic-gray);
   }
