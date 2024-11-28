@@ -103,6 +103,7 @@ function convertExportData(data: SitemapExportWithProjectData): SitemapExportDat
     currency: data.Project[0]?.currency,
     estimates: data.Estimate,
     sitemapPageEstimates: data.SitemapPageEstimate,
+    tax: data.Project[0]?.tax ?? 0,
     sitemapPages: data.SitemapPage.map((page) => ({
       ...page,
       blocks: data.SitemapPageBlock.filter((block) => block.sitemapPageId === page.id).map((block) => ({

@@ -21,7 +21,7 @@ export type SitemapExportWithProjectData = {
   Label: LabelType[]
   Estimate: Estimate[]
   SitemapPageEstimate: SitemapPageEstimate[]
-  Project: { title: string; description: string; currency: string }[]
+  Project: { title: string; description: string; currency: string; tax?: number }[]
   File: FileData[]
   WireframePrimitiveFile: { wireframePrimitiveId: string; fileId: string }[]
 }

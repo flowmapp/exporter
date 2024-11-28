@@ -108,7 +108,7 @@ const formatEstimateHours = (value: string) => {
 }
 
 function formatPageLink(pageLink: string) {
-  if (pageLink.length <= 50) return pageLink
+  if (pageLink.length <= 40) return pageLink
 
-  return pageLink.slice(0, 50) + '...'
+  return pageLink.slice(0, 40) + '...'
 }

@@ -26,11 +26,15 @@ const EstimatesPage: React.FC = () => {
     return sum + pageEstimate.amount
   }, 0)
 
-  const totalSum =
+  const subTotalSum =
     hourlyCosts.reduce((sum, estimate) => {
       const summaryEstimateHours = getSummaryEstimateHoursById(estimate.id)
       return sum + summaryEstimateHours * estimate.rate
     }, 0) + additionalCosts.reduce((sum, estimate) => sum + estimate.rate, 0)
+
+  const { tax } = sitemap
+  const taxValue = (subTotalSum * tax) / 100
+  const totalSum = subTotalSum + taxValue
 
   return (
     <PrintChapterContainer>
@@ -84,12 +88,24 @@ const EstimatesPage: React.FC = () => {
         </table>
       )}
 
-      <table className="w-[18cm] mb-6 text-gray-880 font-bold">
+      <table className="w-[18cm] mb-6 text-gray-880">
         <tbody>
           <tr>
-            <td className="w-1/3">&nbsp;</td>
+            <td className="w-1/3 h-[1.2cm]">&nbsp;</td>
+            <td className="text-right text-m w-1/5 text-neutral-gray-400">Subtotal:</td>
+            <td className="text-right w-1/5 text-neutral-gray-400">{formatEstimateHours(totalHours)}</td>
+            <td className="text-right w-1/5 text-neutral-gray-400">{formatCurrency(sitemap.currency, subTotalSum)}</td>
+          </tr>
+          <tr>
+            <td className="w-1/3 h-[1.2cm]">&nbsp;</td>
+            <td className="text-right text-m w-1/5 text-neutral-gray-400">Tax:</td>
+            <td className="text-right w-1/5 text-neutral-gray-400">{`${tax}%`}</td>
+            <td className="text-right w-1/5 text-neutral-gray-400">{formatCurrency(sitemap.currency, taxValue)}</td>
+          </tr>
+          <tr className="font-bold">
+            <td className="w-1/3 h-[1.2cm]">&nbsp;</td>
             <td className="text-right text-m w-1/5">Total:</td>
-            <td className="text-right w-1/5">{formatEstimateHours(totalHours)}</td>
+            <td className="text-right w-1/5">&nbsp;</td>
             <td className="text-right w-1/5">{formatCurrency(sitemap.currency, totalSum)}</td>
           </tr>
         </tbody>

@@ -580,6 +580,10 @@ video {
   margin-bottom: 1cm;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -660,6 +664,10 @@ video {
   height: 2.25rem;
 }
 
+.h-\[1\.2cm\] {
+  height: 1.2cm;
+}
+
 .h-full {
   height: 100%;
 }
@@ -703,6 +711,10 @@ video {
 
 .flex-grow-0 {
   flex-grow: 0;
+}
+
+.grow {
+  flex-grow: 1;
 }
 
 .transform {
@@ -756,6 +768,10 @@ video {
 
 .rounded-\[1mm\] {
   border-radius: 1mm;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .rounded-xl {
