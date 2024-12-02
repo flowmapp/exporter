@@ -1,5 +1,10 @@
 import PrintChapterContainer from 'src/common/PrintChapterContainer'
-import { SitemapPageBlockType, SitemapPageTreeItem, SitemapPageType } from '../generalTypes'
+import {
+  SitemapPageBlockType,
+  SitemapPageTreeItem,
+  SitemapPageType,
+  SitemapPdfExportBackendOptions,
+} from '../generalTypes'
 import { useSiteMapStructuredPages } from '../useSiteMapStructuredPages'
 import { compareIndex } from 'src/common/sortOrder'
 import PrintSitemapPageTitle from './PrintSitemapPageTitle'
@@ -76,7 +81,7 @@ const SitemapPage: React.FC<{
     if (printEmptyPages)
       return (
         <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="" />
+          <PrintSitemapPageTitle page={page} subtitle="" insertLink />
         </PrintChapterContainer>
       )
 
@@ -85,16 +90,7 @@ const SitemapPage: React.FC<{
 
   const hasSeo = getPageChaptersToPrint(page).seo
 
-  const blocksWithWF = page.blocks
-    .filter((b) => !b.pinTo)
-    .filter((b) => b.wireframePrimitives?.length)
-    .sort(compareIndex)
-
-  const blocksToRender = [
-    ...pinnedToTopBlocks.filter((b) => b.wireframePrimitives?.length),
-    ...blocksWithWF,
-    ...pinnedToBottomBlocks.filter((b) => b.wireframePrimitives?.length),
-  ]
+  const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks)
 
   const contentBlocksToRender = [
     ...pinnedToTopBlocks.filter((b) => b.description),
@@ -102,17 +98,32 @@ const SitemapPage: React.FC<{
     ...pinnedToBottomBlocks.filter((b) => b.description),
   ]
 
+  function getLinkChapter() {
+    switch (true) {
+      case printWireframes && Boolean(blocksWithWFToRender.length):
+        return 'wireframes'
+      case printDescriptions && Boolean(page.description):
+        return 'description'
+      case printBlockDescriptions && Boolean(contentBlocksToRender.length):
+        return 'content'
+      case printSeo && hasSeo:
+        return 'seo'
+    }
+  }
+
+  const linkChapter = getLinkChapter()
+
   return (
     <div>
-      {printWireframes && Boolean(blocksToRender.length) && (
+      {printWireframes && Boolean(blocksWithWFToRender.length) && (
         <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="Wireframe" />
-          <WireFramesContent blocks={blocksToRender} />
+          <PrintSitemapPageTitle page={page} subtitle="Wireframe" insertLink={linkChapter === 'wireframes'} />
+          <WireFramesContent blocks={blocksWithWFToRender} />
         </PrintChapterContainer>
       )}
       {printDescriptions && page.description && (
         <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="Description" />
+          <PrintSitemapPageTitle page={page} subtitle="Description" insertLink={linkChapter === 'description'} />
           <p
             className="mt-1cm w-2/3 ml-1cm [&>img]:width-full"
             dangerouslySetInnerHTML={{ __html: page.description }}
@@ -121,13 +132,13 @@ const SitemapPage: React.FC<{
       )}
       {printBlockDescriptions && Boolean(contentBlocksToRender.length) && (
         <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="Content" />
+          <PrintSitemapPageTitle page={page} subtitle="Content" insertLink={linkChapter === 'content'} />
           <ContentPreview blocks={contentBlocksToRender} />
         </PrintChapterContainer>
       )}
       {printSeo && hasSeo && (
         <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="SEO" />
+          <PrintSitemapPageTitle page={page} subtitle="SEO" insertLink={linkChapter === 'seo'} />
           <PrintSitemapPageSEO page={page} />
         </PrintChapterContainer>
       )}
@@ -137,4 +148,21 @@ const SitemapPage: React.FC<{
 
 function flatTree(tree: SitemapPageTreeItem): SitemapPageTreeItem[] {
   return [tree, ...(tree.children || []).flatMap(flatTree)]
+}
+
+function getBlocksWithWireframes(
+  page: SitemapPageType,
+  pinnedToTopBlocks: SitemapPageBlockType[] = [],
+  pinnedToBottomBlocks: SitemapPageBlockType[] = [],
+) {
+  const blocksWithWF = page.blocks
+    .filter((b) => !b.pinTo)
+    .filter((b) => b.wireframePrimitives?.length)
+    .sort(compareIndex)
+
+  return [
+    ...pinnedToTopBlocks.filter((b) => b.wireframePrimitives?.length),
+    ...blocksWithWF,
+    ...pinnedToBottomBlocks.filter((b) => b.wireframePrimitives?.length),
+  ]
 }

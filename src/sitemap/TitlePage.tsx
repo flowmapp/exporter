@@ -13,7 +13,7 @@ const TitlePage: React.FC = () => {
   return (
     <PrintChapterContainer
       footer={
-        <p className="text-gray-880">
+        <p className="text-gray-880 flex items-center gap-1">
           <img src="flowmapp16.png" className="inline mr-2" alt="Flowmapp" width={`${16}mm`} height={`${16}mm`} />
           flowmapp.com
         </p>
@@ -21,10 +21,10 @@ const TitlePage: React.FC = () => {
     >
       <div>
         <h1>{sitemap.title}</h1>
-        <p className="text-gray-560">
+        <p className="text-gray-560 flex items-center gap-1">
           <FolderIcon size={16} /> {sitemap.projectTitle}
         </p>
-        <p className="text-gray-560">
+        <p className="text-gray-560 flex items-center gap-1">
           <ClockIcon size={16} /> {`${day} ${month} ${year}`}
         </p>
       </div>

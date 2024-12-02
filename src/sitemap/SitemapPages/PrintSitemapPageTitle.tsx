@@ -10,12 +10,12 @@ import { usePrintContext } from '../PrintContext'
 const PrintSitemapPageTitle: React.FC<{
   page: SitemapPageType
   subtitle: string
-}> = ({ page, subtitle }) => {
+  insertLink?: boolean
+}> = ({ page, subtitle, insertLink }) => {
   const hasLabels = !!page.labels.length
 
   const content = [
     <div
-      id={`page/${page.id}`}
       style={{
         display: 'flex',
         alignItems: 'center',
@@ -47,7 +47,7 @@ const PrintSitemapPageTitle: React.FC<{
   ].filter(Boolean)
 
   return (
-    <div className="mb-4">
+    <div className="mb-4" id={insertLink ? `page/${page.id}` : undefined}>
       <h2 className="mb-1">
         {page.title} {subtitle ? '/ ' + subtitle : null}
       </h2>
