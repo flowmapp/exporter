@@ -1,5 +1,5 @@
-import pdf from './SitemapPrint.js'
 import compressor from 'primitive-compressor'
+import pdf from './SitemapPrint.tsx'
 
 export const exportSitemap = (sitemap, { options, format } = {}) => {
   if (!sitemap) {

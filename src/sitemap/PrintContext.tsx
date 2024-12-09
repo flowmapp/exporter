@@ -3,7 +3,7 @@ import { SitemapExportData, SitemapPdfExportBackendOptions } from './generalType
 
 type PrintContextData = { sitemap: SitemapExportData; options: SitemapPdfExportBackendOptions }
 
-const PrintContext = createContext<PrintContextData>({})
+const PrintContext = createContext<PrintContextData | null>(null)
 
 export const PrintContextProvider: React.FC<PropsWithChildren<PrintContextData>> = ({ sitemap, options, children }) => {
   return <PrintContext.Provider value={{ sitemap, options }}>{children}</PrintContext.Provider>

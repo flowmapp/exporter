@@ -1,10 +1,5 @@
 import PrintChapterContainer from 'src/common/PrintChapterContainer'
-import {
-  SitemapPageBlockType,
-  SitemapPageTreeItem,
-  SitemapPageType,
-  SitemapPdfExportBackendOptions,
-} from '../generalTypes'
+import { SitemapPageBlockType, SitemapPageTreeItem, SitemapPageType } from '../generalTypes'
 import { useSiteMapStructuredPages } from '../useSiteMapStructuredPages'
 import { compareIndex } from 'src/common/sortOrder'
 import PrintSitemapPageTitle from './PrintSitemapPageTitle'

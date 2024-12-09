@@ -26,8 +26,6 @@ export type SitemapExportWithProjectData = {
   WireframePrimitiveFile: { wireframePrimitiveId: string; fileId: string }[]
 }
 
-type SitemapPageEstimate = { amount: number; sitemapPageId: string; estimateId: string }
-
 export type SitemapExportData = {
   title: string
   projectTitle: string
@@ -36,7 +34,7 @@ export type SitemapExportData = {
   currency: string
   estimates: Estimate[]
   sitemapPageEstimates: SitemapPageEstimate[]
-  sitemapLines: SitemapLineType[]
+  // sitemapLines: SitemapLineType[]
   sitemapPages: SitemapPageType[]
 }
 

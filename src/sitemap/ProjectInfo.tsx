@@ -4,7 +4,7 @@ import { usePrintContext } from './PrintContext'
 
 const ProjectInfo: React.FC = () => {
   const { sitemap, options } = usePrintContext()
-  if (!options.structure) return null
+  if (!options.projectInfo) return null
 
   if (!sitemap.projectDescription) return null
 

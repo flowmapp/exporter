@@ -1,6 +1,7 @@
 import { renderToString } from 'react-dom/server'
 import {
   isPrimitiveImage,
+  LabelType,
   Primitive,
   SitemapExportData,
   SitemapExportWithProjectData,
@@ -16,6 +17,7 @@ import SitemapPages from './SitemapPages/SitemapPages'
 import ProjectInfo from './ProjectInfo'
 import EstimatesPage from './EstimatesPage'
 import { PrintContextProvider } from './PrintContext'
+import { SitemapPageEstimate } from './estimateTypes'
 
 const SitemapPrint = ({
   sitemap,
@@ -114,11 +116,13 @@ function convertExportData(data: SitemapExportWithProjectData): SitemapExportDat
       })),
       labels: data.SitemapPageLabel.filter((label) => label.sitemapPageId === page.id)
         .map((label) => data.Label.find((l) => l.id === label.labelId))
-        .filter(Boolean),
-      estimates: data.SitemapPageEstimate.filter((estimate) => estimate.sitemapPageId === page.id).map((estimate) => ({
-        estimate: data.Estimate.find((e) => e.id === estimate.estimateId),
-        amount: estimate.amount,
-      })),
+        .filter(Boolean) as LabelType[],
+      estimates: data.SitemapPageEstimate.filter((estimate) => estimate.sitemapPageId === page.id)
+        .map((estimate) => ({
+          estimate: data.Estimate.find((e) => e.id === estimate?.estimateId),
+          amount: estimate.amount,
+        }))
+        .filter((items) => items.estimate) as SitemapPageEstimate[],
     })),
   }
 }

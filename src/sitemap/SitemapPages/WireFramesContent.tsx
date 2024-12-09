@@ -118,6 +118,7 @@ const BlockPrimitive: React.FC<{ primitive: Primitive }> = ({ primitive }) => {
     return <IconPrimitive primitive={primitive} />
   }
 
+  // @ts-ignore
   console.warn(`unknown primitive ${primitive.type}`)
 
   return null

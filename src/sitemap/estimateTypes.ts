@@ -10,6 +10,7 @@ export type Estimate = {
 export type TableEstimate = Estimate & { hours: number; amount: number }
 
 export type SitemapPageEstimate = {
+  estimateId: string
   id: string
   amount: number
   sitemapPageId: string
