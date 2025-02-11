@@ -192,6 +192,7 @@ type PrimitiveCommon = {
   height: number
   params: Record<string, unknown>
   files?: FileData[]
+  isMobile?: boolean
 }
 
 export type PrimitiveText = PrimitiveCommon & {

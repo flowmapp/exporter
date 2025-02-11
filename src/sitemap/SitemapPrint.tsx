@@ -110,9 +110,9 @@ function convertExportData(data: SitemapExportWithProjectData): SitemapExportDat
       ...page,
       blocks: data.SitemapPageBlock.filter((block) => block.sitemapPageId === page.id).map((block) => ({
         ...block,
-        wireframePrimitives: data.WireframePrimitive.filter(
-          (primitive) => primitive.sitemapPageBlockId === block.id,
-        ).map((p) => fillFilesToPrimitive(p, data)),
+        wireframePrimitives: data.WireframePrimitive.filter((primitive) => primitive.sitemapPageBlockId === block.id)
+          .filter((p) => !p.isMobile)
+          .map((p) => fillFilesToPrimitive(p, data)),
       })),
       labels: data.SitemapPageLabel.filter((label) => label.sitemapPageId === page.id)
         .map((label) => data.Label.find((l) => l.id === label.labelId))
