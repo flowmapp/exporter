@@ -5,6 +5,7 @@ export type SitemapPdfExportBackendOptions = {
   structure: boolean
   pages: boolean
   wireframes: boolean
+  wireframesMobile: boolean
   pageDescriptions: boolean
   content: boolean
   seo: boolean

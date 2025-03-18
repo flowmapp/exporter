@@ -60,11 +60,13 @@ export function getPageChaptersToPrint(page: SitemapPageType) {
   }
 }
 
-const SitemapPage: React.FC<{
+type PageProps = {
   page: SitemapPageType
   pinnedToTopBlocks?: SitemapPageBlockType[]
   pinnedToBottomBlocks?: SitemapPageBlockType[]
-}> = ({ page, pinnedToTopBlocks = [], pinnedToBottomBlocks = [] }) => {
+}
+
+const SitemapPage: React.FC<PageProps> = ({ page, pinnedToTopBlocks = [], pinnedToBottomBlocks = [] }) => {
   const { options } = usePrintContext()
   const printWireframes = options.wireframes
   const printBlockDescriptions = options.content
@@ -110,12 +112,12 @@ const SitemapPage: React.FC<{
 
   return (
     <div>
-      {printWireframes && Boolean(blocksWithWFToRender.length) && (
-        <PrintChapterContainer>
-          <PrintSitemapPageTitle page={page} subtitle="Wireframe" insertLink={linkChapter === 'wireframes'} />
-          <WireFramesContent blocks={blocksWithWFToRender} />
-        </PrintChapterContainer>
-      )}
+      <WireframesPages
+        page={page}
+        pinnedToTopBlocks={pinnedToTopBlocks}
+        pinnedToBottomBlocks={pinnedToBottomBlocks}
+        insertLink={linkChapter === 'wireframes'}
+      />
       {printDescriptions && page.description && (
         <PrintChapterContainer>
           <PrintSitemapPageTitle page={page} subtitle="Description" insertLink={linkChapter === 'description'} />
@@ -149,15 +151,96 @@ function getBlocksWithWireframes(
   page: SitemapPageType,
   pinnedToTopBlocks: SitemapPageBlockType[] = [],
   pinnedToBottomBlocks: SitemapPageBlockType[] = [],
+  platform: 'desktop' | 'mobile',
 ) {
   const blocksWithWF = page.blocks
     .filter((b) => !b.pinTo)
+    .map((b) => ({
+      ...b,
+      wireframePrimitives: b.wireframePrimitives?.filter((p) => (platform === 'mobile' ? p.isMobile : !p.isMobile)),
+    }))
     .filter((b) => b.wireframePrimitives?.length)
     .sort(compareIndex)
+
+  pinnedToTopBlocks = pinnedToTopBlocks
+    .map((b) => ({
+      ...b,
+      wireframePrimitives: b.wireframePrimitives?.filter((p) => (platform === 'mobile' ? p.isMobile : !p.isMobile)),
+    }))
+    .filter((b) => b.wireframePrimitives?.length)
+  pinnedToBottomBlocks = pinnedToBottomBlocks
+    .map((b) => ({
+      ...b,
+      wireframePrimitives: b.wireframePrimitives?.filter((p) => (platform === 'mobile' ? p.isMobile : !p.isMobile)),
+    }))
+    .filter((b) => b.wireframePrimitives?.length)
 
   return [
     ...pinnedToTopBlocks.filter((b) => b.wireframePrimitives?.length),
     ...blocksWithWF,
     ...pinnedToBottomBlocks.filter((b) => b.wireframePrimitives?.length),
   ]
+}
+
+const WireframesPages: React.FC<PageProps & { insertLink: boolean }> = ({
+  page,
+  pinnedToTopBlocks,
+  pinnedToBottomBlocks,
+  insertLink,
+}) => {
+  const { options } = usePrintContext()
+  const printWireframes = options.wireframes
+
+  if (!printWireframes) return null
+
+  return (
+    <>
+      <WireframesDesktopPage
+        page={page}
+        pinnedToTopBlocks={pinnedToTopBlocks}
+        pinnedToBottomBlocks={pinnedToBottomBlocks}
+        insertLink={insertLink}
+      />
+      <WireframesMobilePage
+        page={page}
+        pinnedToTopBlocks={pinnedToTopBlocks}
+        pinnedToBottomBlocks={pinnedToBottomBlocks}
+        insertLink={insertLink}
+      />
+    </>
+  )
+}
+
+const WireframesDesktopPage: React.FC<PageProps & { insertLink: boolean }> = ({
+  page,
+  pinnedToTopBlocks,
+  pinnedToBottomBlocks,
+}) => {
+  const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'desktop')
+
+  if (!blocksWithWFToRender.length) return null
+
+  return (
+    <PrintChapterContainer>
+      <PrintSitemapPageTitle page={page} subtitle="Wireframe (Desktop)" insertLink />
+      <WireFramesContent blocks={blocksWithWFToRender} />
+    </PrintChapterContainer>
+  )
+}
+
+const WireframesMobilePage: React.FC<PageProps & { insertLink: boolean }> = ({
+  page,
+  pinnedToTopBlocks,
+  pinnedToBottomBlocks,
+}) => {
+  const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'mobile')
+
+  if (!blocksWithWFToRender.length) return null
+
+  return (
+    <PrintChapterContainer>
+      <PrintSitemapPageTitle page={page} subtitle="Wireframe (Mobile)" insertLink />
+      <WireFramesContent blocks={blocksWithWFToRender} />
+    </PrintChapterContainer>
+  )
 }

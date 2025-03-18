@@ -21,10 +21,6 @@ const toFile = (stream) => {
   })
 }
 
-const dataToFile = (html) => {
-  fs.writeFileSync(`${__dirname}/../dist/${ENTITY}.${FORMAT}`, html)
-}
-
 switch (process.env.ENTITY) {
   case 'sitemap': {
     exportSitemap(data, { format: FORMAT }).then(toFile)
