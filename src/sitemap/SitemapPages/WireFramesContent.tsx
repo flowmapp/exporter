@@ -25,13 +25,14 @@ import { FaIcon } from 'src/common/FaIcon/FaIcon'
 
 type Props = {
   blocks: SitemapPageBlockType[]
+  platform: 'desktop' | 'mobile'
 }
 
-const WireFramesContent: React.FC<Props> = ({ blocks }) => {
+const WireFramesContent: React.FC<Props> = ({ blocks, platform }) => {
   return (
     <div style={{ marginBottom: `${32 / pixelsInMM}mm` }}>
       {blocks.map((block) => {
-        const blockHeight = getBlockHeight(block)
+        const blockHeight = getBlockHeight(block, platform)
         const realHeight = Math.min(blockHeight, 250)
         const transform = `scale(${realHeight / blockHeight})`
         return (
@@ -483,8 +484,10 @@ function getPrimitiveSize(primitive: Primitive) {
   return { width, height }
 }
 
-function getBlockHeight(block: SitemapPageBlockType) {
-  if (block.height) return block.height / pixelsInMM
+function getBlockHeight(block: SitemapPageBlockType, platform: 'desktop' | 'mobile') {
+  const baseHeight = platform === 'desktop' ? block.height : (block.mobileHeight ?? block.height)
+
+  if (baseHeight) return baseHeight / pixelsInMM
 
   if (block.params?.migratedHeight) {
     return block.params?.migratedHeight / pixelsInMM

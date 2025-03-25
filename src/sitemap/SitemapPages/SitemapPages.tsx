@@ -68,7 +68,7 @@ type PageProps = {
 
 const SitemapPage: React.FC<PageProps> = ({ page, pinnedToTopBlocks = [], pinnedToBottomBlocks = [] }) => {
   const { options } = usePrintContext()
-  const printWireframes = options.wireframes
+  const printWireframes = options.wireframes || options.wireframesMobile
   const printBlockDescriptions = options.content
   const printDescriptions = options.pageDescriptions
   const printSeo = options.seo
@@ -87,7 +87,10 @@ const SitemapPage: React.FC<PageProps> = ({ page, pinnedToTopBlocks = [], pinned
 
   const hasSeo = getPageChaptersToPrint(page).seo
 
-  const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks)
+  const hasBlocksWithWF = Boolean(
+    getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'desktop').length ||
+      getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'mobile').length,
+  )
 
   const contentBlocksToRender = [
     ...pinnedToTopBlocks.filter((b) => b.description),
@@ -97,7 +100,7 @@ const SitemapPage: React.FC<PageProps> = ({ page, pinnedToTopBlocks = [], pinned
 
   function getLinkChapter() {
     switch (true) {
-      case printWireframes && Boolean(blocksWithWFToRender.length):
+      case printWireframes && hasBlocksWithWF:
         return 'wireframes'
       case printDescriptions && Boolean(page.description):
         return 'description'
@@ -223,7 +226,7 @@ const WireframesDesktopPage: React.FC<PageProps & { insertLink: boolean }> = ({
   return (
     <PrintChapterContainer>
       <PrintSitemapPageTitle page={page} subtitle="Wireframe (Desktop)" insertLink />
-      <WireFramesContent blocks={blocksWithWFToRender} />
+      <WireFramesContent blocks={blocksWithWFToRender} platform="desktop" />
     </PrintChapterContainer>
   )
 }
@@ -240,7 +243,7 @@ const WireframesMobilePage: React.FC<PageProps & { insertLink: boolean }> = ({
   return (
     <PrintChapterContainer>
       <PrintSitemapPageTitle page={page} subtitle="Wireframe (Mobile)" insertLink />
-      <WireFramesContent blocks={blocksWithWFToRender} />
+      <WireFramesContent blocks={blocksWithWFToRender} platform="mobile" />
     </PrintChapterContainer>
   )
 }

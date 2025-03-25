@@ -144,6 +144,7 @@ export type SitemapPageBlockType = {
     migratedHeight?: number
   }
   height: number
+  mobileHeight?: number
   description: string | null
   file?: SitemapPageFile
   backgroundOpacity?: number
