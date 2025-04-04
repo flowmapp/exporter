@@ -192,7 +192,7 @@ const WireframesPages: React.FC<PageProps & { insertLink: boolean }> = ({
   insertLink,
 }) => {
   const { options } = usePrintContext()
-  const printWireframes = options.wireframes
+  const printWireframes = options.wireframes || options.wireframesMobile
 
   if (!printWireframes) return null
 
