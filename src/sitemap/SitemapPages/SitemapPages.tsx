@@ -219,6 +219,8 @@ const WireframesDesktopPage: React.FC<PageProps & { insertLink: boolean }> = ({
   pinnedToTopBlocks,
   pinnedToBottomBlocks,
 }) => {
+  const { options } = usePrintContext()
+  if (!options.wireframes) return null
   const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'desktop')
 
   if (!blocksWithWFToRender.length) return null
@@ -236,6 +238,8 @@ const WireframesMobilePage: React.FC<PageProps & { insertLink: boolean }> = ({
   pinnedToTopBlocks,
   pinnedToBottomBlocks,
 }) => {
+  const { options } = usePrintContext()
+  if (!options.wireframesMobile) return null
   const blocksWithWFToRender = getBlocksWithWireframes(page, pinnedToTopBlocks, pinnedToBottomBlocks, 'mobile')
 
   if (!blocksWithWFToRender.length) return null
