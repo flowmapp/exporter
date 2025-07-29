@@ -12,20 +12,23 @@ const PrintSitemapPageTitle: React.FC<{
   subtitle: string
   insertLink?: boolean
 }> = ({ page, subtitle, insertLink }) => {
+  const { options } = usePrintContext()
   const hasLabels = !!page.labels.length
 
   const content = [
-    <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '8px',
-      }}
-    >
-      <Dollar20Icon size={16} />
-      <SitemapPageEstimateLabel estimates={page.estimates} />
-    </div>,
+    options.estimates && (
+      <div
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '8px',
+        }}
+      >
+        <Dollar20Icon size={16} />
+        <SitemapPageEstimateLabel estimates={page.estimates} />
+      </div>
+    ),
     hasLabels && (
       <div className="flex flex-nowrap items-center gap-2">
         <TagIcon />
